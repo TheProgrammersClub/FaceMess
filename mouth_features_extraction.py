@@ -110,8 +110,8 @@ while True:
 					current_mouth_features.append(calc_geometric_distance( shape[j][0], shape[j][1], shape[k][0], shape[k][1] ))
 			# cv2.line(frame, (shape[48][0], shape[48][1]), (shape[60][0], shape[60][1]), (255,255,255))
 
+			global_mouth_feature_list.append((current_mouth_features, frame_number))
 
-		global_mouth_feature_list.append((current_mouth_features, frame_number))
 		# show the frame
 		cv2.imshow("Frame", frame)
 		key = cv2.waitKey(1) & 0xFF

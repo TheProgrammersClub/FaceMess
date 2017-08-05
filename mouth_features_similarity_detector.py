@@ -7,6 +7,7 @@ import imutils
 import time
 import dlib
 import cv2
+import numpy as np
 import math
 import pickle
 
@@ -72,6 +73,7 @@ while True:
 		
 
 		if len(rects) > 0:		
+			rect = rects[0]
 			# determine the facial landmarks for the face region, then
 			# convert the facial landmark (x, y)-coordinates to a NumPy
 			# array
@@ -105,28 +107,31 @@ while True:
 					cv2.line(frame, (shape[j][0], shape[j][1]), (shape[k][0], shape[k][1]), (200, 200, 200))
 					current_mouth_features.append(calc_geometric_distance( shape[j][0], shape[j][1], shape[k][0], shape[k][1] ))
 		
-		most_similar_frame = (0, 0)
-		min_diff = -1
+			most_similar_frame = (0, 0)
+			min_diff = -1
 
-		if len(current_mouth_features) > 0:
-			for features in target_mouth_feature_list:
-				frame_features, curr_frame_number = features[0], features[1]
-				total_diff = 0
-				print(len(frame_features))
-				for idx in range(len(frame_features)):
-					diff = abs(current_mouth_features[idx] - frame_features[idx])
-					if idx > 20:
-						total_diff += 2*diff
-					else:
-						total_diff += diff
-				if total_diff < min_diff or min_diff == -1:
-					min_diff = total_diff
-					most_similar_frame = (frame_features, curr_frame_number)
-		target_frame_number = most_similar_frame[1]
-		target_video_cap.set(1, target_frame_number)
-		ret, similar_frame = target_video_cap.read()
-		if ret == True:
-			cv2.imshow("similar_frame", similar_frame)
+			if len(current_mouth_features) > 0:
+				for features in target_mouth_feature_list:
+					frame_features, curr_frame_number = features[0], features[1]
+					total_diff = 0
+					# print(len(frame_features))
+					for idx in range(len(frame_features)):
+						diff = abs(current_mouth_features[idx] - frame_features[idx])
+						if idx > 20:
+							total_diff += 2*diff
+						else:
+							total_diff += diff
+					if total_diff < min_diff or min_diff == -1:
+						min_diff = total_diff
+						most_similar_frame = (frame_features, curr_frame_number)
+			target_frame_number = most_similar_frame[1]
+			target_video_cap.set(1, target_frame_number)
+			ret, similar_frame = target_video_cap.read()
+			if ret == True:
+				x1, y1, x2, y2 = rect.left(), rect.top(), rect.left()+rect.width(), rect.top()+rect.height()
+				cv2.rectangle(frame, (x1, y1), (x2, y2), (255,255,255))
+				cv2.imshow("similar_frame", similar_frame)
+			# print(target_frame_number, min_diff)
 
 
 
