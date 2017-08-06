@@ -20,10 +20,11 @@ predictor = dlib.shape_predictor(PATH_TO_LANDMARK_DETECTOR)
 with open('face_coordinates.pkl', 'rb') as f:
 	array = pickle.load(f)
 
-img = cv2.imread("snap.png")
+img = cv2.imread("images.jpg")
 img = imutils.resize(img, width=480)
 gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)	 
 rects = detector(gray, 0)
+distances = []
 
 for rect in rects:
 	curr_array = []
@@ -32,7 +33,7 @@ for rect in rects:
 
 	for idx, (x, y) in enumerate(shape):
 		curr_array.append((x,y))
-
+	
 	distances = []
 	for coord in curr_array:
 		x1,y1 = coord[0],coord[1]

@@ -10,16 +10,11 @@ import cv2
 import math
 import pickle
 
-
 PATH_TO_LANDMARK_DETECTOR = "./shape_predictor_68_face_landmarks.dat"
 FILE_NAME = "mouth_test"
 
-
 def calc_geometric_distance(x1, y1, x2, y2):
 	return math.sqrt( (x2-x1)**2 + (y2-y1)**2 )
-
-
-
 
 
 # define a dictionary that maps the indexes of the facial
@@ -44,11 +39,11 @@ predictor = dlib.shape_predictor(PATH_TO_LANDMARK_DETECTOR)
 
 # initialize the video stream and allow the cammera sensor to warmup
 print("[INFO] camera sensor warming up...")
-# vs = VideoStream(0).start()
 cap = cv2.VideoCapture(0)
-fourcc = cv2.VideoWriter_fourcc(*'XVID')
-out = cv2.VideoWriter(FILE_NAME+'.avi',fourcc, 20.0, (640,480))
-time.sleep(2.0)
+fourcc = cv2.VideoWriter_fourcc(*'MJPG')
+ret,frame = cap.read()
+height,width,_ = frame.shape
+out = cv2.VideoWriter(FILE_NAME+'.avi',fourcc, 30.0,(width,height))
 
 frame_number = -1
 global_mouth_feature_list = []
@@ -57,8 +52,6 @@ FPS = 0
 
 # loop over the frames from the video stream
 while True:
-
-
 	frame_number += 1
 	current_mouth_features = []
 	# grab the frame from the threaded video stream, resize it to
@@ -68,7 +61,7 @@ while True:
 	ret,frame = cap.read()
 	if ret == True:
 		out.write(frame)
-		frame = imutils.resize(frame, width=720)
+		frame = imutils.resize(frame)
 		gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
 	 
 		# detect faces in the grayscale frame
@@ -81,14 +74,13 @@ while True:
 			# array
 			shape = predictor(gray, rect)
 			shape = face_utils.shape_to_np(shape)
-			
-	 
+				 
 			# loop over the (x, y)-coordinates for the facial landmarks
 			# and draw them on the image
 			for idx, (x, y) in enumerate(shape):
-				# cv2.putText(frame, str(idx), (x,y-10), cv2.FONT_HERSHEY_SIMPLEX, 0.3, (255,255,255))
+				# cv2.putText(frame, str(idx), NT_HERSHEY_SIMPLEX, 0.3, (255,255,255))
 				cv2.circle(frame, (x, y), 1, (0, 0, 255), -1)
-
+# 
 			for j in range(LM["mouth_outer"][0], LM["mouth_outer"][1]):
 				cv2.line(frame, (shape[j][0], shape[j][1]), (shape[j+1][0], shape[j+1][1]), (255,255,255))
 				current_mouth_features.append(calc_geometric_distance(shape[j][0], shape[j][1], shape[j+1][0], shape[j+1][1]))
@@ -97,18 +89,11 @@ while True:
 					cv2.line(frame, (shape[j+1][0], shape[j+1][1]), (shape[ LM["mouth_outer"][0] ][0], shape[ LM["mouth_outer"][0] ][1]), (255,255,255))
 					current_mouth_features.append(calc_geometric_distance( shape[j+1][0], shape[j+1][1], shape[ LM["mouth_outer"][0] ][0], shape[ LM["mouth_outer"][0] ][1] ))
 
-			# for j in range(LM["mouth_inner"][0], LM["mouth_inner"][1]):
-			# 	cv2.line(frame, (shape[j][0], shape[j][1]), (shape[j+1][0], shape[j+1][1]), (255,255,255))
-			# 	current_mouth_features.append(calc_geometric_distance( shape[j][0], shape[j][1], shape[j+1][0], shape[j+1][1] ))
-			# 	if j == LM["mouth_inner"][1]-1:
-			# 		cv2.line(frame, (shape[j+1][0], shape[j+1][1]), (shape[ LM["mouth_inner"][0] ][0], shape[ LM["mouth_inner"][0] ][1]), (255,255,255))
-			# 		current_mouth_features.append(calc_geometric_distance( shape[j+1][0], shape[j+1][1], shape[ LM["mouth_inner"][0] ][0], shape[ LM["mouth_inner"][0] ][1] ))
 
 			for j in range(LM["mouth_inner"][0], LM["mouth_inner"][1]+1):
 				for k in range(LM["mouth_inner"][0], LM["mouth_inner"][1]+1):
 					cv2.line(frame, (shape[j][0], shape[j][1]), (shape[k][0], shape[k][1]), (200, 200, 200))
 					current_mouth_features.append(calc_geometric_distance( shape[j][0], shape[j][1], shape[k][0], shape[k][1] ))
-			# cv2.line(frame, (shape[48][0], shape[48][1]), (shape[60][0], shape[60][1]), (255,255,255))
 
 			global_mouth_feature_list.append((current_mouth_features, frame_number))
 
