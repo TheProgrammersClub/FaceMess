@@ -9,7 +9,7 @@ import dlib
 import cv2
 
 
-PATH_TO_LANDMARK_DETECTOR = "./shape_predictor_68_face_landmarks.dat"
+PATH_TO_LANDMARK_DETECTOR = "./trained_models/shape_predictor_68_face_landmarks.dat"
 
 # define a dictionary that maps the indexes of the facial
 # landmarks to specific face regions
@@ -45,9 +45,9 @@ while True:
 	# frame = vs.read()
 	ret,frame = cap.read()
 	frame = imutils.resize(frame, width=720)
+	frame = cv2.flip(frame, flipCode=1)
 
-	snapshot = cv2.imread("snapshot.png")
-	gray = cv2.cvtColor("snapshot.png", cv2.COLOR_BGR2GRAY)
+	gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
  
 	# detect faces in the grayscale frame
 	rects = detector(gray, 0)

@@ -1,6 +1,7 @@
 from imutils.video import VideoStream
 from imutils import face_utils
 import datetime
+import os
 import argparse
 import imutils
 import time
@@ -10,8 +11,9 @@ import numpy as np
 import math
 import pickle
 
-PATH_TO_LANDMARK_DETECTOR = "./shape_predictor_68_face_landmarks.dat"
-FILE_NAME = "mouth_test"
+PATH_TO_LANDMARK_DETECTOR = "./trained_models/shape_predictor_68_face_landmarks.dat"
+TEST_NAME = "test_run"
+FOLDER_NAME = "./trained_models/"+TEST_NAME
 
 def calc_geometric_distance(x1, y1, x2, y2):
 	return math.sqrt( (x2-x1)**2 + (y2-y1)**2 )
@@ -39,8 +41,8 @@ cap = cv2.VideoCapture(0)
 time.sleep(2.0)
 
 frame_number = -1
-target_mouth_feature_list = pickle.load( open( FILE_NAME+".p", "rb") )
-target_video_cap = cv2.VideoCapture( FILE_NAME+".avi")
+target_mouth_feature_list = pickle.load( open( os.path.join(FOLDER_NAME, TEST_NAME+'.p'), "rb") )
+target_video_cap = cv2.VideoCapture( os.path.join(FOLDER_NAME, TEST_NAME+'.avi'))
 
 # loop over the frames from the video stream
 while True:
@@ -92,8 +94,8 @@ while True:
 			target_video_cap.set(1, target_frame_number)
 			ret, similar_frame = target_video_cap.read()
 			if ret == True:
-				x1, y1, x2, y2 = rect.left(), rect.top(), rect.left()+rect.width(), rect.top()+rect.height()
-				cv2.rectangle(frame, (x1, y1), (x2, y2), (255,255,255))
+				# x1, y1, x2, y2 = rect.left(), rect.top(), rect.left()+rect.width(), rect.top()+rect.height()
+				# cv2.rectangle(frame, (x1, y1), (x2, y2), (255,255,255))
 				cv2.imshow("similar_frame", similar_frame)
 		cv2.imshow("Frame", frame)
 		key = cv2.waitKey(1) & 0xFF

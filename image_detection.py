@@ -15,7 +15,7 @@ def eucledian_distance(x1,y1,x2,y2):
 
 cap = cv2.VideoCapture(0)
 	
-PATH_TO_LANDMARK_DETECTOR = "./shape_predictor_68_face_landmarks.dat"
+PATH_TO_LANDMARK_DETECTOR = "./trained_models/shape_predictor_68_face_landmarks.dat"
 print("[INFO] loading facial landmark predictor...")
 detector = dlib.get_frontal_face_detector()
 predictor = dlib.shape_predictor(PATH_TO_LANDMARK_DETECTOR)
@@ -23,6 +23,7 @@ predictor = dlib.shape_predictor(PATH_TO_LANDMARK_DETECTOR)
 while True:
 	ret,frame = cap.read()
 	frame = imutils.resize(frame, width=480)
+	frame = cv2.flip(frame, flipCode=1)
 	gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)	 
 	rects = detector(gray, 0)
 
@@ -46,7 +47,7 @@ while True:
 		global_array.append(distances)
 		cv2.imshow("Live",frame)
 
-	key = cv2.waitKey(1)
+	key = cv2.waitKey(1) & 0xFF
 	if key == ord(' '):
 		cv2.imwrite("snap.png",frame)
 	elif key == ord('q'):

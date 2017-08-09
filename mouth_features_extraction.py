@@ -2,6 +2,7 @@
 from imutils.video import VideoStream
 from imutils import face_utils
 import datetime
+import os
 import argparse
 import imutils
 import time
@@ -10,8 +11,12 @@ import cv2
 import math
 import pickle
 
-PATH_TO_LANDMARK_DETECTOR = "./shape_predictor_68_face_landmarks.dat"
-FILE_NAME = "mouth_test"
+PATH_TO_LANDMARK_DETECTOR = "./trained_models/shape_predictor_68_face_landmarks.dat"
+TEST_NAME = "test_run"
+FOLDER_NAME = "./trained_models/"+TEST_NAME
+
+if not os.path.exists(FOLDER_NAME):
+	os.makedirs(FOLDER_NAME)
 
 def calc_geometric_distance(x1, y1, x2, y2):
 	return math.sqrt( (x2-x1)**2 + (y2-y1)**2 )
@@ -43,7 +48,9 @@ cap = cv2.VideoCapture(0)
 fourcc = cv2.VideoWriter_fourcc(*'MJPG')
 ret,frame = cap.read()
 height,width,_ = frame.shape
-out = cv2.VideoWriter(FILE_NAME+'.avi',fourcc, 30.0,(width,height))
+
+
+out = cv2.VideoWriter(os.path.join(FOLDER_NAME, TEST_NAME+'.avi'),fourcc, 30.0,(width,height))
 
 frame_number = -1
 global_mouth_feature_list = []
@@ -80,7 +87,7 @@ while True:
 			for idx, (x, y) in enumerate(shape):
 				# cv2.putText(frame, str(idx), NT_HERSHEY_SIMPLEX, 0.3, (255,255,255))
 				cv2.circle(frame, (x, y), 1, (0, 0, 255), -1)
-# 
+
 			for j in range(LM["mouth_outer"][0], LM["mouth_outer"][1]):
 				cv2.line(frame, (shape[j][0], shape[j][1]), (shape[j+1][0], shape[j+1][1]), (255,255,255))
 				current_mouth_features.append(calc_geometric_distance(shape[j][0], shape[j][1], shape[j+1][0], shape[j+1][1]))
@@ -112,7 +119,7 @@ while True:
 		break
 
 print(len(global_mouth_feature_list))
-pickle.dump(global_mouth_feature_list, open( FILE_NAME+".p", "wb" ))
+pickle.dump(global_mouth_feature_list, open( os.path.join(FOLDER_NAME, TEST_NAME+'.p'), "wb" ))
 # do a bit of cleanup
 cap.release()
 out.release()
