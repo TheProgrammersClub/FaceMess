@@ -11,6 +11,9 @@ import cv2
 import math
 import pickle
 
+# Custom libs
+from test_and_utils import affine_transform
+
 PATH_TO_LANDMARK_DETECTOR = "./trained_models/shape_predictor_68_face_landmarks.dat"
 TEST_NAME = "test_run"
 FOLDER_NAME = "./trained_models/"+TEST_NAME
@@ -42,6 +45,9 @@ print("[INFO] loading facial landmark predictor...")
 detector = dlib.get_frontal_face_detector()
 predictor = dlib.shape_predictor(PATH_TO_LANDMARK_DETECTOR)
 
+# initialize the face aligner
+aligner = face_utils.FaceAligner(predictor, desiredFaceWidth=256)
+
 # initialize the video stream and allow the cammera sensor to warmup
 print("[INFO] camera sensor warming up...")
 cap = cv2.VideoCapture(0)
@@ -54,8 +60,6 @@ out = cv2.VideoWriter(os.path.join(FOLDER_NAME, TEST_NAME+'.avi'),fourcc, 30.0,(
 
 frame_number = -1
 global_mouth_feature_list = []
-oldTime = time.time()
-FPS = 0
 
 # loop over the frames from the video stream
 while True:
@@ -66,43 +70,55 @@ while True:
 	# grayscale
 	# frame = vs.read()
 	ret,frame = cap.read()
+
 	if ret == True:
-		out.write(frame)
 		frame = imutils.resize(frame)
+		frame = cv2.flip(frame, flipCode=1)
 		gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
+		out.write(frame)
 	 
 		# detect faces in the grayscale frame
 		rects = detector(gray, 0)
 		
 		if len(rects) > 0:
 			rect = rects[0]
-			# determine the facial landmarks for the face region, then
-			# convert the facial landmark (x, y)-coordinates to a NumPy
-			# array
-			shape = predictor(gray, rect)
-			shape = face_utils.shape_to_np(shape)
+
+			faceOrig, faceAligned = affine_transform.alignFace(frame, gray, rect, aligner)
+			alignedGray = cv2.cvtColor(faceOrig, cv2.COLOR_BGR2GRAY)
+			alignedRect = detector(alignedGray, 0)
+
+			if len(alignedRect) > 0:
+				alignedRect = alignedRect[0]
+
+				# determine the facial landmarks for the face region, then
+				# convert the facial landmark (x, y)-coordinates to a NumPy
+				# array
+				shape = predictor(alignedGray, alignedRect)
+				shape = face_utils.shape_to_np(shape)
+
+
 				 
-			# loop over the (x, y)-coordinates for the facial landmarks
-			# and draw them on the image
-			for idx, (x, y) in enumerate(shape):
-				# cv2.putText(frame, str(idx), NT_HERSHEY_SIMPLEX, 0.3, (255,255,255))
-				cv2.circle(frame, (x, y), 1, (0, 0, 255), -1)
+				# loop over the (x, y)-coordinates for the facial landmarks
+				# and draw them on the image
+				for idx, (x, y) in enumerate(shape):	
+					# cv2.putText(frame, str(idx), NT_HERSHEY_SIMPLEX, 0.3, (255,255,255))
+					cv2.circle(frame, (x, y), 1, (0, 0, 255), -1)
 
-			for j in range(LM["mouth_outer"][0], LM["mouth_outer"][1]):
-				cv2.line(frame, (shape[j][0], shape[j][1]), (shape[j+1][0], shape[j+1][1]), (255,255,255))
-				current_mouth_features.append(calc_geometric_distance(shape[j][0], shape[j][1], shape[j+1][0], shape[j+1][1]))
+				for j in range(LM["mouth_outer"][0], LM["mouth_outer"][1]):
+					cv2.line(frame, (shape[j][0], shape[j][1]), (shape[j+1][0], shape[j+1][1]), (255,255,255))
+					current_mouth_features.append(calc_geometric_distance(shape[j][0], shape[j][1], shape[j+1][0], shape[j+1][1]))
 
-				if j == LM["mouth_outer"][1]-1:
-					cv2.line(frame, (shape[j+1][0], shape[j+1][1]), (shape[ LM["mouth_outer"][0] ][0], shape[ LM["mouth_outer"][0] ][1]), (255,255,255))
-					current_mouth_features.append(calc_geometric_distance( shape[j+1][0], shape[j+1][1], shape[ LM["mouth_outer"][0] ][0], shape[ LM["mouth_outer"][0] ][1] ))
+					if j == LM["mouth_outer"][1]-1:
+						cv2.line(frame, (shape[j+1][0], shape[j+1][1]), (shape[ LM["mouth_outer"][0] ][0], shape[ LM["mouth_outer"][0] ][1]), (255,255,255))
+						current_mouth_features.append(calc_geometric_distance( shape[j+1][0], shape[j+1][1], shape[ LM["mouth_outer"][0] ][0], shape[ LM["mouth_outer"][0] ][1] ))
 
 
-			for j in range(LM["mouth_inner"][0], LM["mouth_inner"][1]+1):
-				for k in range(LM["mouth_inner"][0], LM["mouth_inner"][1]+1):
-					cv2.line(frame, (shape[j][0], shape[j][1]), (shape[k][0], shape[k][1]), (200, 200, 200))
-					current_mouth_features.append(calc_geometric_distance( shape[j][0], shape[j][1], shape[k][0], shape[k][1] ))
+				for j in range(LM["mouth_inner"][0], LM["mouth_inner"][1]+1):
+					for k in range(LM["mouth_inner"][0], LM["mouth_inner"][1]+1):
+						cv2.line(frame, (shape[j][0], shape[j][1]), (shape[k][0], shape[k][1]), (200, 200, 200))
+						current_mouth_features.append(calc_geometric_distance( shape[j][0], shape[j][1], shape[k][0], shape[k][1] ))
 
-			global_mouth_feature_list.append((current_mouth_features, frame_number))
+				global_mouth_feature_list.append((current_mouth_features, frame_number))
 
 		# show the frame
 		cv2.imshow("Frame", frame)
