@@ -53,10 +53,10 @@ print("[INFO] camera sensor warming up...")
 cap = cv2.VideoCapture(0)
 fourcc = cv2.VideoWriter_fourcc(*'MJPG')
 ret,frame = cap.read()
-height,width,_ = frame.shape
+# height,width,_ = frame.shape
 
 
-out = cv2.VideoWriter(os.path.join(FOLDER_NAME, TEST_NAME+'.avi'),fourcc, 30.0,(width,height))
+out = cv2.VideoWriter(os.path.join(FOLDER_NAME, TEST_NAME+'.avi'),fourcc, 30.0,(256,256))
 
 frame_number = -1
 global_mouth_feature_list = []
@@ -75,7 +75,6 @@ while True:
 		frame = imutils.resize(frame)
 		frame = cv2.flip(frame, flipCode=1)
 		gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
-		out.write(frame)
 	 
 		# detect faces in the grayscale frame
 		rects = detector(gray, 0)
@@ -86,6 +85,9 @@ while True:
 			faceOrig, faceAligned = affine_transform.alignFace(frame, gray, rect, aligner)
 			alignedGray = cv2.cvtColor(faceOrig, cv2.COLOR_BGR2GRAY)
 			alignedRect = detector(alignedGray, 0)
+			
+			# print(frame.shape, faceAligned.shape)
+			out.write(faceAligned)
 
 			if len(alignedRect) > 0:
 				alignedRect = alignedRect[0]
