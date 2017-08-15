@@ -7,6 +7,9 @@ We will run the program for this on the server. And use the "decompressed_file.t
 """
 import zlib
 import sys
+
+print(__doc__)
+
 # Read a file
 input_file = sys.argv[1]
 lines = []
