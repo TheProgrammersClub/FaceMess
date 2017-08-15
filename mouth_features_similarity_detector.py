@@ -10,9 +10,20 @@ import cv2
 import numpy as np
 import math
 import pickle
+from skimage.measure import compare_ssim as ssim
 
-# Custom libs
-from test_and_utils import affine_transform
+def ssim_compare(imageA,imageB):
+	err = ssim(imageA,imageB)
+	return err
+
+
+def alignFace(frame, gray, rect, aligner):
+	(x, y, w, h) = face_utils.rect_to_bb(rect)
+	faceOrig = imutils.resize(frame[y:y + h, x:x + w], width = 512)
+	faceAligned = aligner.align(frame, gray, rect)
+
+	return faceOrig, faceAligned
+
 
 PATH_TO_LANDMARK_DETECTOR = "./trained_models/shape_predictor_68_face_landmarks.dat"
 TEST_NAME = "test_run"
@@ -21,7 +32,8 @@ FOLDER_NAME = "./trained_models/"+TEST_NAME
 VideoSource = 0
 
 def calc_geometric_distance(x1, y1, x2, y2):
-	return math.sqrt( (x2-x1)**2 + (y2-y1)**2 )
+	# return math.sqrt( (x2-x1)**2 + (y2-y1)**2 )			# Eucledian Distance
+	return (abs(x1 - x2) + abs(y1 - y2))		# Manhattan Distance
 
 # define a dictionary that maps the indexes of the facial
 # landmarks to specific face regions
@@ -70,8 +82,8 @@ while True:
 		if len(rects) > 0:		
 			rect = rects[0]
 
-			faceOrig, faceAligned = affine_transform.alignFace(frame, gray, rect, aligner)
-			alignedGray = cv2.cvtColor(faceAligned, cv2.COLOR_BGR2GRAY)
+			faceOrig, faceAligned = alignFace(frame, gray, rect, aligner)
+			alignedGray = cv2.cvtColor(faceOrig, cv2.COLOR_BGR2GRAY)
 			alignedRect = detector(alignedGray, 0)
 			cv2.imshow("test", faceAligned)
 
@@ -80,20 +92,20 @@ while True:
 
 				shape = predictor(alignedGray, alignedRect)
 				shape = face_utils.shape_to_np(shape)	 
-				for idx, (x, y) in enumerate(shape):
-					cv2.circle(frame, (x, y), 1, (0, 0, 255), -1)
+				# for idx, (x, y) in enumerate(shape):
+					# cv2.circle(frame, (x, y), 1, (0, 0, 255), -1)
 
 				for j in range(LM["mouth_outer"][0], LM["mouth_outer"][1]):
-					cv2.line(frame, (shape[j][0], shape[j][1]), (shape[j+1][0], shape[j+1][1]), (255,255,255))
+					# cv2.line(frame, (shape[j][0], shape[j][1]), (shape[j+1][0], shape[j+1][1]), (255,255,255))
 					current_mouth_features.append(calc_geometric_distance(shape[j][0], shape[j][1], shape[j+1][0], shape[j+1][1]))
 
 					if j == LM["mouth_outer"][1]-1:
-						cv2.line(frame, (shape[j+1][0], shape[j+1][1]), (shape[ LM["mouth_outer"][0] ][0], shape[ LM["mouth_outer"][0] ][1]), (255,255,255))
+						# cv2.line(frame, (shape[j+1][0], shape[j+1][1]), (shape[ LM["mouth_outer"][0] ][0], shape[ LM["mouth_outer"][0] ][1]), (255,255,255))
 						current_mouth_features.append(calc_geometric_distance( shape[j+1][0], shape[j+1][1], shape[ LM["mouth_outer"][0] ][0], shape[ LM["mouth_outer"][0] ][1] ))
 
 				for j in range(LM["mouth_inner"][0], LM["mouth_inner"][1]+1):
 					for k in range(LM["mouth_inner"][0], LM["mouth_inner"][1]+1):
-						cv2.line(frame, (shape[j][0], shape[j][1]), (shape[k][0], shape[k][1]), (200, 200, 200))
+						# cv2.line(frame, (shape[j][0], shape[j][1]), (shape[k][0], shape[k][1]), (200, 200, 200))
 						current_mouth_features.append(calc_geometric_distance( shape[j][0], shape[j][1], shape[k][0], shape[k][1] ))
 			
 				most_similar_frame = (0, 0)
@@ -122,6 +134,9 @@ while True:
 					# cv2.rectangle(frame, (x1, y1), (x2, y2), (255,255,255))
 					cv2.imshow("similar_frame", similar_frame)
 		cv2.imshow("Frame", frame)
+
+		# Measuring Similarity between images
+		# print("Structural Similarity Measure %d" % ssim_compare(frame,similar_frame))
 		key = cv2.waitKey(1) & 0xFF
 	 
 		if key == ord("q"):
