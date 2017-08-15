@@ -17,6 +17,9 @@ from test_and_utils import affine_transform
 PATH_TO_LANDMARK_DETECTOR = "./trained_models/shape_predictor_68_face_landmarks.dat"
 TEST_NAME = "test_run"
 FOLDER_NAME = "./trained_models/"+TEST_NAME
+# Source video (0 for live webcam)
+# VideoSource = "test_run.avi"
+VideoSource = 0
 
 if not os.path.exists(FOLDER_NAME):
 	os.makedirs(FOLDER_NAME)
@@ -50,13 +53,18 @@ aligner = face_utils.FaceAligner(predictor, desiredFaceWidth=256)
 
 # initialize the video stream and allow the cammera sensor to warmup
 print("[INFO] camera sensor warming up...")
-cap = cv2.VideoCapture(0)
-fourcc = cv2.VideoWriter_fourcc(*'MJPG')
-ret,frame = cap.read()
-# height,width,_ = frame.shape
+if VideoSource == 0:
+	cap = cv2.VideoCapture(VideoSource)
+	fourcc = cv2.VideoWriter_fourcc(*'MJPG')
+	ret,frame = cap.read()
+	height,width,_ = frame.shape
+	out = cv2.VideoWriter(os.path.join(FOLDER_NAME, TEST_NAME+'.avi'),fourcc, 30.0,(width,height))
+else:
+	cap = cv2.VideoCapture(os.path.join(FOLDER_NAME, VideoSource))
 
 
-out = cv2.VideoWriter(os.path.join(FOLDER_NAME, TEST_NAME+'.avi'),fourcc, 30.0,(256,256))
+# height, width = 256, 256
+
 
 frame_number = -1
 global_mouth_feature_list = []
@@ -73,7 +81,8 @@ while True:
 
 	if ret == True:
 		frame = imutils.resize(frame)
-		frame = cv2.flip(frame, flipCode=1)
+		if VideoSource == 0:
+			frame = cv2.flip(frame, flipCode=1)
 		gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
 	 
 		# detect faces in the grayscale frame
@@ -83,11 +92,13 @@ while True:
 			rect = rects[0]
 
 			faceOrig, faceAligned = affine_transform.alignFace(frame, gray, rect, aligner)
-			alignedGray = cv2.cvtColor(faceOrig, cv2.COLOR_BGR2GRAY)
+			alignedGray = cv2.cvtColor(faceAligned, cv2.COLOR_BGR2GRAY)
 			alignedRect = detector(alignedGray, 0)
 			
+			
 			# print(frame.shape, faceAligned.shape)
-			out.write(faceAligned)
+			if VideoSource == 0:
+				out.write(frame)
 
 			if len(alignedRect) > 0:
 				alignedRect = alignedRect[0]
@@ -104,21 +115,22 @@ while True:
 				# and draw them on the image
 				for idx, (x, y) in enumerate(shape):	
 					# cv2.putText(frame, str(idx), NT_HERSHEY_SIMPLEX, 0.3, (255,255,255))
-					cv2.circle(frame, (x, y), 1, (0, 0, 255), -1)
+					cv2.circle(faceAligned, (x, y), 1, (0, 0, 255), -1)
 
 				for j in range(LM["mouth_outer"][0], LM["mouth_outer"][1]):
-					cv2.line(frame, (shape[j][0], shape[j][1]), (shape[j+1][0], shape[j+1][1]), (255,255,255))
+					cv2.line(faceAligned, (shape[j][0], shape[j][1]), (shape[j+1][0], shape[j+1][1]), (255,255,255))
 					current_mouth_features.append(calc_geometric_distance(shape[j][0], shape[j][1], shape[j+1][0], shape[j+1][1]))
 
 					if j == LM["mouth_outer"][1]-1:
-						cv2.line(frame, (shape[j+1][0], shape[j+1][1]), (shape[ LM["mouth_outer"][0] ][0], shape[ LM["mouth_outer"][0] ][1]), (255,255,255))
+						cv2.line(faceAligned, (shape[j+1][0], shape[j+1][1]), (shape[ LM["mouth_outer"][0] ][0], shape[ LM["mouth_outer"][0] ][1]), (255,255,255))
 						current_mouth_features.append(calc_geometric_distance( shape[j+1][0], shape[j+1][1], shape[ LM["mouth_outer"][0] ][0], shape[ LM["mouth_outer"][0] ][1] ))
 
 
 				for j in range(LM["mouth_inner"][0], LM["mouth_inner"][1]+1):
 					for k in range(LM["mouth_inner"][0], LM["mouth_inner"][1]+1):
-						cv2.line(frame, (shape[j][0], shape[j][1]), (shape[k][0], shape[k][1]), (200, 200, 200))
+						cv2.line(faceAligned, (shape[j][0], shape[j][1]), (shape[k][0], shape[k][1]), (200, 200, 200))
 						current_mouth_features.append(calc_geometric_distance( shape[j][0], shape[j][1], shape[k][0], shape[k][1] ))
+				cv2.imshow("test", faceAligned)
 
 				global_mouth_feature_list.append((current_mouth_features, frame_number))
 
@@ -139,6 +151,7 @@ while True:
 print(len(global_mouth_feature_list))
 pickle.dump(global_mouth_feature_list, open( os.path.join(FOLDER_NAME, TEST_NAME+'.p'), "wb" ))
 # do a bit of cleanup
+if VideoSource == 0:
+	out.release()
 cap.release()
-out.release()
 cv2.destroyAllWindows()

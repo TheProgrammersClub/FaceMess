@@ -17,6 +17,8 @@ from test_and_utils import affine_transform
 PATH_TO_LANDMARK_DETECTOR = "./trained_models/shape_predictor_68_face_landmarks.dat"
 TEST_NAME = "test_run"
 FOLDER_NAME = "./trained_models/"+TEST_NAME
+# Source video (0 for live webcam)
+VideoSource = 0
 
 def calc_geometric_distance(x1, y1, x2, y2):
 	return math.sqrt( (x2-x1)**2 + (y2-y1)**2 )
@@ -43,7 +45,10 @@ predictor = dlib.shape_predictor(PATH_TO_LANDMARK_DETECTOR)
 aligner = face_utils.FaceAligner(predictor, desiredFaceWidth=256)
 
 print("[INFO] camera sensor warming up...")
-cap = cv2.VideoCapture(0)
+if VideoSource == 0:
+	cap = cv2.VideoCapture(VideoSource)
+else:
+	cap = cv2.VideoCapture(os.path.join(FOLDER_NAME, VideoSource))
 time.sleep(2.0)
 
 frame_number = -1
@@ -58,15 +63,17 @@ while True:
 
 	if ret == True:
 		frame = imutils.resize(frame)
-		frame = cv2.flip(frame, flipCode=1)
+		if VideoSource == 0:
+			frame = cv2.flip(frame, flipCode=1)
 		gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
 		rects = detector(gray, 0)
 		if len(rects) > 0:		
 			rect = rects[0]
 
 			faceOrig, faceAligned = affine_transform.alignFace(frame, gray, rect, aligner)
-			alignedGray = cv2.cvtColor(faceOrig, cv2.COLOR_BGR2GRAY)
+			alignedGray = cv2.cvtColor(faceAligned, cv2.COLOR_BGR2GRAY)
 			alignedRect = detector(alignedGray, 0)
+			cv2.imshow("test", faceAligned)
 
 			if len(alignedRect) > 0:
 				alignedRect = alignedRect[0]
