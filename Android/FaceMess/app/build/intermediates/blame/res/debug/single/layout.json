@@ -4,44 +4,44 @@
         "source": "C:\\Users\\Danish Shah\\.android\\build-cache\\8c1154fcf87c0bb85b2bacd176e7f7e16d1a8051\\output\\res\\layout\\notification_template_part_chronometer.xml"
     },
     {
-        "merged": "G:\\Project\\Cross-Platform\\FaceMess\\Android\\FaceMess\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_main.xml",
-        "source": "G:\\Project\\Cross-Platform\\FaceMess\\Android\\FaceMess\\app\\src\\main\\res\\layout\\activity_main.xml"
+        "merged": "D:\\Android Projects\\AndroidStudioProjects\\FaceMess\\Android\\FaceMess\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_alert_dialog_material.xml",
+        "source": "C:\\Users\\Praneet\\.android\\build-cache\\327c6005924ee4c5031ae1e5505db16df98f4293\\output\\res\\layout\\abc_alert_dialog_material.xml"
     },
     {
-        "merged": "G:\\Project\\Cross-Platform\\FaceMess\\Android\\FaceMess\\app\\build\\intermediates\\res\\merged\\debug\\layout\\support_simple_spinner_dropdown_item.xml",
-        "source": "C:\\Users\\Danish Shah\\.android\\build-cache\\8c1154fcf87c0bb85b2bacd176e7f7e16d1a8051\\output\\res\\layout\\support_simple_spinner_dropdown_item.xml"
-    },
-    {
-        "merged": "G:\\Project\\Cross-Platform\\FaceMess\\Android\\FaceMess\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_layout_snackbar.xml",
-        "source": "C:\\Users\\Danish Shah\\.android\\build-cache\\18288926512a3abc82efc5db11dac01f7f123d53\\output\\res\\layout\\design_layout_snackbar.xml"
+        "merged": "D:\\Android Projects\\AndroidStudioProjects\\FaceMess\\Android\\FaceMess\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_select_dialog_material.xml",
+        "source": "C:\\Users\\Praneet\\.android\\build-cache\\327c6005924ee4c5031ae1e5505db16df98f4293\\output\\res\\layout\\abc_select_dialog_material.xml"
     },
     {
         "merged": "G:\\Project\\Cross-Platform\\FaceMess\\Android\\FaceMess\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_mode_close_item_material.xml",
         "source": "C:\\Users\\Danish Shah\\.android\\build-cache\\8c1154fcf87c0bb85b2bacd176e7f7e16d1a8051\\output\\res\\layout\\abc_action_mode_close_item_material.xml"
     },
     {
-        "merged": "G:\\Project\\Cross-Platform\\FaceMess\\Android\\FaceMess\\app\\build\\intermediates\\res\\merged\\debug\\layout\\item_collection.xml",
-        "source": "G:\\Project\\Cross-Platform\\FaceMess\\Android\\FaceMess\\app\\src\\main\\res\\layout\\item_collection.xml"
+        "merged": "D:\\Android Projects\\AndroidStudioProjects\\FaceMess\\Android\\FaceMess\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_layout_snackbar.xml",
+        "source": "C:\\Users\\Praneet\\.android\\build-cache\\1d091dd11b302329968ab8e38fda63b745ceadc0\\output\\res\\layout\\design_layout_snackbar.xml"
     },
     {
-        "merged": "G:\\Project\\Cross-Platform\\FaceMess\\Android\\FaceMess\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_menu_layout.xml",
-        "source": "C:\\Users\\Danish Shah\\.android\\build-cache\\8c1154fcf87c0bb85b2bacd176e7f7e16d1a8051\\output\\res\\layout\\abc_action_menu_layout.xml"
+        "merged": "D:\\Android Projects\\AndroidStudioProjects\\FaceMess\\Android\\FaceMess\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_dialog_title_material.xml",
+        "source": "C:\\Users\\Praneet\\.android\\build-cache\\327c6005924ee4c5031ae1e5505db16df98f4293\\output\\res\\layout\\abc_dialog_title_material.xml"
+    },
+    {
+        "merged": "D:\\Android Projects\\AndroidStudioProjects\\FaceMess\\Android\\FaceMess\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_layout.xml",
+        "source": "C:\\Users\\Praneet\\.android\\build-cache\\327c6005924ee4c5031ae1e5505db16df98f4293\\output\\res\\layout\\abc_list_menu_item_layout.xml"
     },
     {
         "merged": "G:\\Project\\Cross-Platform\\FaceMess\\Android\\FaceMess\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_layout_tab_icon.xml",
         "source": "C:\\Users\\Danish Shah\\.android\\build-cache\\18288926512a3abc82efc5db11dac01f7f123d53\\output\\res\\layout\\design_layout_tab_icon.xml"
     },
     {
-        "merged": "G:\\Project\\Cross-Platform\\FaceMess\\Android\\FaceMess\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_settings.xml",
-        "source": "G:\\Project\\Cross-Platform\\FaceMess\\Android\\FaceMess\\app\\src\\main\\res\\layout\\activity_settings.xml"
+        "merged": "D:\\Android Projects\\AndroidStudioProjects\\FaceMess\\Android\\FaceMess\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_action.xml",
+        "source": "C:\\Users\\Praneet\\.android\\build-cache\\327c6005924ee4c5031ae1e5505db16df98f4293\\output\\res\\layout\\notification_action.xml"
     },
     {
-        "merged": "G:\\Project\\Cross-Platform\\FaceMess\\Android\\FaceMess\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_screen_toolbar.xml",
-        "source": "C:\\Users\\Danish Shah\\.android\\build-cache\\8c1154fcf87c0bb85b2bacd176e7f7e16d1a8051\\output\\res\\layout\\abc_screen_toolbar.xml"
+        "merged": "D:\\Android Projects\\AndroidStudioProjects\\FaceMess\\Android\\FaceMess\\app\\build\\intermediates\\res\\merged\\debug\\layout\\content_main.xml",
+        "source": "D:\\Android Projects\\AndroidStudioProjects\\FaceMess\\Android\\FaceMess\\app\\src\\main\\res\\layout\\content_main.xml"
     },
     {
-        "merged": "G:\\Project\\Cross-Platform\\FaceMess\\Android\\FaceMess\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_media_custom.xml",
-        "source": "C:\\Users\\Danish Shah\\.android\\build-cache\\8c1154fcf87c0bb85b2bacd176e7f7e16d1a8051\\output\\res\\layout\\notification_template_media_custom.xml"
+        "merged": "D:\\Android Projects\\AndroidStudioProjects\\FaceMess\\Android\\FaceMess\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_media_custom.xml",
+        "source": "C:\\Users\\Praneet\\.android\\build-cache\\327c6005924ee4c5031ae1e5505db16df98f4293\\output\\res\\layout\\notification_template_media_custom.xml"
     },
     {
         "merged": "G:\\Project\\Cross-Platform\\FaceMess\\Android\\FaceMess\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_alert_dialog_title_material.xml",
@@ -56,36 +56,44 @@
         "source": "C:\\Users\\Danish Shah\\.android\\build-cache\\8c1154fcf87c0bb85b2bacd176e7f7e16d1a8051\\output\\res\\layout\\notification_template_media.xml"
     },
     {
-        "merged": "G:\\Project\\Cross-Platform\\FaceMess\\Android\\FaceMess\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_search_dropdown_item_icons_2line.xml",
-        "source": "C:\\Users\\Danish Shah\\.android\\build-cache\\8c1154fcf87c0bb85b2bacd176e7f7e16d1a8051\\output\\res\\layout\\abc_search_dropdown_item_icons_2line.xml"
+        "merged": "D:\\Android Projects\\AndroidStudioProjects\\FaceMess\\Android\\FaceMess\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_navigation_item_subheader.xml",
+        "source": "C:\\Users\\Praneet\\.android\\build-cache\\1d091dd11b302329968ab8e38fda63b745ceadc0\\output\\res\\layout\\design_navigation_item_subheader.xml"
     },
     {
-        "merged": "G:\\Project\\Cross-Platform\\FaceMess\\Android\\FaceMess\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_menu_item_action_area.xml",
-        "source": "C:\\Users\\Danish Shah\\.android\\build-cache\\18288926512a3abc82efc5db11dac01f7f123d53\\output\\res\\layout\\design_menu_item_action_area.xml"
+        "merged": "D:\\Android Projects\\AndroidStudioProjects\\FaceMess\\Android\\FaceMess\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_bar_title_item.xml",
+        "source": "C:\\Users\\Praneet\\.android\\build-cache\\327c6005924ee4c5031ae1e5505db16df98f4293\\output\\res\\layout\\abc_action_bar_title_item.xml"
+    },
+    {
+        "merged": "D:\\Android Projects\\AndroidStudioProjects\\FaceMess\\Android\\FaceMess\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_bottom_navigation_item.xml",
+        "source": "C:\\Users\\Praneet\\.android\\build-cache\\1d091dd11b302329968ab8e38fda63b745ceadc0\\output\\res\\layout\\design_bottom_navigation_item.xml"
     },
     {
         "merged": "G:\\Project\\Cross-Platform\\FaceMess\\Android\\FaceMess\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_checkbox.xml",
         "source": "C:\\Users\\Danish Shah\\.android\\build-cache\\8c1154fcf87c0bb85b2bacd176e7f7e16d1a8051\\output\\res\\layout\\abc_list_menu_item_checkbox.xml"
     },
     {
-        "merged": "G:\\Project\\Cross-Platform\\FaceMess\\Android\\FaceMess\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_search_view.xml",
-        "source": "C:\\Users\\Danish Shah\\.android\\build-cache\\8c1154fcf87c0bb85b2bacd176e7f7e16d1a8051\\output\\res\\layout\\abc_search_view.xml"
+        "merged": "D:\\Android Projects\\AndroidStudioProjects\\FaceMess\\Android\\FaceMess\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_screen_content_include.xml",
+        "source": "C:\\Users\\Praneet\\.android\\build-cache\\327c6005924ee4c5031ae1e5505db16df98f4293\\output\\res\\layout\\abc_screen_content_include.xml"
     },
     {
         "merged": "G:\\Project\\Cross-Platform\\FaceMess\\Android\\FaceMess\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_bottom_navigation_item.xml",
         "source": "C:\\Users\\Danish Shah\\.android\\build-cache\\18288926512a3abc82efc5db11dac01f7f123d53\\output\\res\\layout\\design_bottom_navigation_item.xml"
     },
     {
+        "merged": "D:\\Android Projects\\AndroidStudioProjects\\FaceMess\\Android\\FaceMess\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_part_time.xml",
+        "source": "C:\\Users\\Praneet\\.android\\build-cache\\327c6005924ee4c5031ae1e5505db16df98f4293\\output\\res\\layout\\notification_template_part_time.xml"
+    },
+    {
+        "merged": "D:\\Android Projects\\AndroidStudioProjects\\FaceMess\\Android\\FaceMess\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_splash.xml",
+        "source": "D:\\Android Projects\\AndroidStudioProjects\\FaceMess\\Android\\FaceMess\\app\\src\\main\\res\\layout\\activity_splash.xml"
+    },
+    {
+        "merged": "D:\\Android Projects\\AndroidStudioProjects\\FaceMess\\Android\\FaceMess\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_text_input_password_icon.xml",
+        "source": "C:\\Users\\Praneet\\.android\\build-cache\\1d091dd11b302329968ab8e38fda63b745ceadc0\\output\\res\\layout\\design_text_input_password_icon.xml"
+    },
+    {
         "merged": "G:\\Project\\Cross-Platform\\FaceMess\\Android\\FaceMess\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_navigation_menu_item.xml",
         "source": "C:\\Users\\Danish Shah\\.android\\build-cache\\18288926512a3abc82efc5db11dac01f7f123d53\\output\\res\\layout\\design_navigation_menu_item.xml"
-    },
-    {
-        "merged": "G:\\Project\\Cross-Platform\\FaceMess\\Android\\FaceMess\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_lines_media.xml",
-        "source": "C:\\Users\\Danish Shah\\.android\\build-cache\\8c1154fcf87c0bb85b2bacd176e7f7e16d1a8051\\output\\res\\layout\\notification_template_lines_media.xml"
-    },
-    {
-        "merged": "G:\\Project\\Cross-Platform\\FaceMess\\Android\\FaceMess\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_part_time.xml",
-        "source": "C:\\Users\\Danish Shah\\.android\\build-cache\\8c1154fcf87c0bb85b2bacd176e7f7e16d1a8051\\output\\res\\layout\\notification_template_part_time.xml"
     },
     {
         "merged": "G:\\Project\\Cross-Platform\\FaceMess\\Android\\FaceMess\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_splash.xml",
@@ -94,6 +102,242 @@
     {
         "merged": "G:\\Project\\Cross-Platform\\FaceMess\\Android\\FaceMess\\app\\build\\intermediates\\res\\merged\\debug\\layout\\select_dialog_singlechoice_material.xml",
         "source": "C:\\Users\\Danish Shah\\.android\\build-cache\\8c1154fcf87c0bb85b2bacd176e7f7e16d1a8051\\output\\res\\layout\\select_dialog_singlechoice_material.xml"
+    },
+    {
+        "merged": "D:\\Android Projects\\AndroidStudioProjects\\FaceMess\\Android\\FaceMess\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_icon_group.xml",
+        "source": "C:\\Users\\Praneet\\.android\\build-cache\\327c6005924ee4c5031ae1e5505db16df98f4293\\output\\res\\layout\\notification_template_icon_group.xml"
+    },
+    {
+        "merged": "G:\\Project\\Cross-Platform\\FaceMess\\Android\\FaceMess\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_layout_tab_text.xml",
+        "source": "C:\\Users\\Danish Shah\\.android\\build-cache\\18288926512a3abc82efc5db11dac01f7f123d53\\output\\res\\layout\\design_layout_tab_text.xml"
+    },
+    {
+        "merged": "D:\\Android Projects\\AndroidStudioProjects\\FaceMess\\Android\\FaceMess\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_menu_layout.xml",
+        "source": "C:\\Users\\Praneet\\.android\\build-cache\\327c6005924ee4c5031ae1e5505db16df98f4293\\output\\res\\layout\\abc_action_menu_layout.xml"
+    },
+    {
+        "merged": "G:\\Project\\Cross-Platform\\FaceMess\\Android\\FaceMess\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_bottom_sheet_dialog.xml",
+        "source": "C:\\Users\\Danish Shah\\.android\\build-cache\\18288926512a3abc82efc5db11dac01f7f123d53\\output\\res\\layout\\design_bottom_sheet_dialog.xml"
+    },
+    {
+        "merged": "G:\\Project\\Cross-Platform\\FaceMess\\Android\\FaceMess\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_bar_up_container.xml",
+        "source": "C:\\Users\\Danish Shah\\.android\\build-cache\\8c1154fcf87c0bb85b2bacd176e7f7e16d1a8051\\output\\res\\layout\\abc_action_bar_up_container.xml"
+    },
+    {
+        "merged": "D:\\Android Projects\\AndroidStudioProjects\\FaceMess\\Android\\FaceMess\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_mode_bar.xml",
+        "source": "C:\\Users\\Praneet\\.android\\build-cache\\327c6005924ee4c5031ae1e5505db16df98f4293\\output\\res\\layout\\abc_action_mode_bar.xml"
+    },
+    {
+        "merged": "D:\\Android Projects\\AndroidStudioProjects\\FaceMess\\Android\\FaceMess\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_main.xml",
+        "source": "D:\\Android Projects\\AndroidStudioProjects\\FaceMess\\Android\\FaceMess\\app\\src\\main\\res\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "G:\\Project\\Cross-Platform\\FaceMess\\Android\\FaceMess\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_navigation_item.xml",
+        "source": "C:\\Users\\Danish Shah\\.android\\build-cache\\18288926512a3abc82efc5db11dac01f7f123d53\\output\\res\\layout\\design_navigation_item.xml"
+    },
+    {
+        "merged": "D:\\Android Projects\\AndroidStudioProjects\\FaceMess\\Android\\FaceMess\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_menu_item_action_area.xml",
+        "source": "C:\\Users\\Praneet\\.android\\build-cache\\1d091dd11b302329968ab8e38fda63b745ceadc0\\output\\res\\layout\\design_menu_item_action_area.xml"
+    },
+    {
+        "merged": "D:\\Android Projects\\AndroidStudioProjects\\FaceMess\\Android\\FaceMess\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_menu_item_layout.xml",
+        "source": "C:\\Users\\Praneet\\.android\\build-cache\\327c6005924ee4c5031ae1e5505db16df98f4293\\output\\res\\layout\\abc_action_menu_item_layout.xml"
+    },
+    {
+        "merged": "G:\\Project\\Cross-Platform\\FaceMess\\Android\\FaceMess\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_navigation_item_separator.xml",
+        "source": "C:\\Users\\Danish Shah\\.android\\build-cache\\18288926512a3abc82efc5db11dac01f7f123d53\\output\\res\\layout\\design_navigation_item_separator.xml"
+    },
+    {
+        "merged": "D:\\Android Projects\\AndroidStudioProjects\\FaceMess\\Android\\FaceMess\\app\\build\\intermediates\\res\\merged\\debug\\layout\\select_dialog_singlechoice_material.xml",
+        "source": "C:\\Users\\Praneet\\.android\\build-cache\\327c6005924ee4c5031ae1e5505db16df98f4293\\output\\res\\layout\\select_dialog_singlechoice_material.xml"
+    },
+    {
+        "merged": "D:\\Android Projects\\AndroidStudioProjects\\FaceMess\\Android\\FaceMess\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_navigation_menu.xml",
+        "source": "C:\\Users\\Praneet\\.android\\build-cache\\1d091dd11b302329968ab8e38fda63b745ceadc0\\output\\res\\layout\\design_navigation_menu.xml"
+    },
+    {
+        "merged": "G:\\Project\\Cross-Platform\\FaceMess\\Android\\FaceMess\\app\\build\\intermediates\\res\\merged\\debug\\layout\\select_dialog_multichoice_material.xml",
+        "source": "C:\\Users\\Danish Shah\\.android\\build-cache\\8c1154fcf87c0bb85b2bacd176e7f7e16d1a8051\\output\\res\\layout\\select_dialog_multichoice_material.xml"
+    },
+    {
+        "merged": "D:\\Android Projects\\AndroidStudioProjects\\FaceMess\\Android\\FaceMess\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_bar_view_list_nav_layout.xml",
+        "source": "C:\\Users\\Praneet\\.android\\build-cache\\327c6005924ee4c5031ae1e5505db16df98f4293\\output\\res\\layout\\abc_action_bar_view_list_nav_layout.xml"
+    },
+    {
+        "merged": "G:\\Project\\Cross-Platform\\FaceMess\\Android\\FaceMess\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_popup_menu_item_layout.xml",
+        "source": "C:\\Users\\Danish Shah\\.android\\build-cache\\8c1154fcf87c0bb85b2bacd176e7f7e16d1a8051\\output\\res\\layout\\abc_popup_menu_item_layout.xml"
+    },
+    {
+        "merged": "G:\\Project\\Cross-Platform\\FaceMess\\Android\\FaceMess\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_icon.xml",
+        "source": "C:\\Users\\Danish Shah\\.android\\build-cache\\8c1154fcf87c0bb85b2bacd176e7f7e16d1a8051\\output\\res\\layout\\abc_list_menu_item_icon.xml"
+    },
+    {
+        "merged": "G:\\Project\\Cross-Platform\\FaceMess\\Android\\FaceMess\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_screen_content_include.xml",
+        "source": "C:\\Users\\Danish Shah\\.android\\build-cache\\8c1154fcf87c0bb85b2bacd176e7f7e16d1a8051\\output\\res\\layout\\abc_screen_content_include.xml"
+    },
+    {
+        "merged": "G:\\Project\\Cross-Platform\\FaceMess\\Android\\FaceMess\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_menu_item_layout.xml",
+        "source": "C:\\Users\\Danish Shah\\.android\\build-cache\\8c1154fcf87c0bb85b2bacd176e7f7e16d1a8051\\output\\res\\layout\\abc_action_menu_item_layout.xml"
+    },
+    {
+        "merged": "G:\\Project\\Cross-Platform\\FaceMess\\Android\\FaceMess\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_select_dialog_material.xml",
+        "source": "C:\\Users\\Danish Shah\\.android\\build-cache\\8c1154fcf87c0bb85b2bacd176e7f7e16d1a8051\\output\\res\\layout\\abc_select_dialog_material.xml"
+    },
+    {
+        "merged": "G:\\Project\\Cross-Platform\\FaceMess\\Android\\FaceMess\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_alert_dialog_material.xml",
+        "source": "C:\\Users\\Danish Shah\\.android\\build-cache\\8c1154fcf87c0bb85b2bacd176e7f7e16d1a8051\\output\\res\\layout\\abc_alert_dialog_material.xml"
+    },
+    {
+        "merged": "D:\\Android Projects\\AndroidStudioProjects\\FaceMess\\Android\\FaceMess\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_action_tombstone.xml",
+        "source": "C:\\Users\\Praneet\\.android\\build-cache\\327c6005924ee4c5031ae1e5505db16df98f4293\\output\\res\\layout\\notification_action_tombstone.xml"
+    },
+    {
+        "merged": "G:\\Project\\Cross-Platform\\FaceMess\\Android\\FaceMess\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_icon_group.xml",
+        "source": "C:\\Users\\Danish Shah\\.android\\build-cache\\8c1154fcf87c0bb85b2bacd176e7f7e16d1a8051\\output\\res\\layout\\notification_template_icon_group.xml"
+    },
+    {
+        "merged": "G:\\Project\\Cross-Platform\\FaceMess\\Android\\FaceMess\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_bar_title_item.xml",
+        "source": "C:\\Users\\Danish Shah\\.android\\build-cache\\8c1154fcf87c0bb85b2bacd176e7f7e16d1a8051\\output\\res\\layout\\abc_action_bar_title_item.xml"
+    },
+    {
+        "merged": "D:\\Android Projects\\AndroidStudioProjects\\FaceMess\\Android\\FaceMess\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_alert_dialog_button_bar_material.xml",
+        "source": "C:\\Users\\Praneet\\.android\\build-cache\\327c6005924ee4c5031ae1e5505db16df98f4293\\output\\res\\layout\\abc_alert_dialog_button_bar_material.xml"
+    },
+    {
+        "merged": "D:\\Android Projects\\AndroidStudioProjects\\FaceMess\\Android\\FaceMess\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_navigation_item.xml",
+        "source": "C:\\Users\\Praneet\\.android\\build-cache\\1d091dd11b302329968ab8e38fda63b745ceadc0\\output\\res\\layout\\design_navigation_item.xml"
+    },
+    {
+        "merged": "G:\\Project\\Cross-Platform\\FaceMess\\Android\\FaceMess\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_dialog_title_material.xml",
+        "source": "C:\\Users\\Danish Shah\\.android\\build-cache\\8c1154fcf87c0bb85b2bacd176e7f7e16d1a8051\\output\\res\\layout\\abc_dialog_title_material.xml"
+    },
+    {
+        "merged": "D:\\Android Projects\\AndroidStudioProjects\\FaceMess\\Android\\FaceMess\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_lines_media.xml",
+        "source": "C:\\Users\\Praneet\\.android\\build-cache\\327c6005924ee4c5031ae1e5505db16df98f4293\\output\\res\\layout\\notification_template_lines_media.xml"
+    },
+    {
+        "merged": "D:\\Android Projects\\AndroidStudioProjects\\FaceMess\\Android\\FaceMess\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_bottom_sheet_dialog.xml",
+        "source": "C:\\Users\\Praneet\\.android\\build-cache\\1d091dd11b302329968ab8e38fda63b745ceadc0\\output\\res\\layout\\design_bottom_sheet_dialog.xml"
+    },
+    {
+        "merged": "G:\\Project\\Cross-Platform\\FaceMess\\Android\\FaceMess\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_layout_snackbar_include.xml",
+        "source": "C:\\Users\\Danish Shah\\.android\\build-cache\\18288926512a3abc82efc5db11dac01f7f123d53\\output\\res\\layout\\design_layout_snackbar_include.xml"
+    },
+    {
+        "merged": "G:\\Project\\Cross-Platform\\FaceMess\\Android\\FaceMess\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_radio.xml",
+        "source": "C:\\Users\\Danish Shah\\.android\\build-cache\\8c1154fcf87c0bb85b2bacd176e7f7e16d1a8051\\output\\res\\layout\\abc_list_menu_item_radio.xml"
+    },
+    {
+        "merged": "D:\\Android Projects\\AndroidStudioProjects\\FaceMess\\Android\\FaceMess\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_screen_simple_overlay_action_mode.xml",
+        "source": "C:\\Users\\Praneet\\.android\\build-cache\\327c6005924ee4c5031ae1e5505db16df98f4293\\output\\res\\layout\\abc_screen_simple_overlay_action_mode.xml"
+    },
+    {
+        "merged": "G:\\Project\\Cross-Platform\\FaceMess\\Android\\FaceMess\\app\\build\\intermediates\\res\\merged\\debug\\layout\\content_main.xml",
+        "source": "G:\\Project\\Cross-Platform\\FaceMess\\Android\\FaceMess\\app\\src\\main\\res\\layout\\content_main.xml"
+    },
+    {
+        "merged": "G:\\Project\\Cross-Platform\\FaceMess\\Android\\FaceMess\\app\\build\\intermediates\\res\\merged\\debug\\layout\\select_dialog_item_material.xml",
+        "source": "C:\\Users\\Danish Shah\\.android\\build-cache\\8c1154fcf87c0bb85b2bacd176e7f7e16d1a8051\\output\\res\\layout\\select_dialog_item_material.xml"
+    },
+    {
+        "merged": "G:\\Project\\Cross-Platform\\FaceMess\\Android\\FaceMess\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_navigation_item_subheader.xml",
+        "source": "C:\\Users\\Danish Shah\\.android\\build-cache\\18288926512a3abc82efc5db11dac01f7f123d53\\output\\res\\layout\\design_navigation_item_subheader.xml"
+    },
+    {
+        "merged": "D:\\Android Projects\\AndroidStudioProjects\\FaceMess\\Android\\FaceMess\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_search_view.xml",
+        "source": "C:\\Users\\Praneet\\.android\\build-cache\\327c6005924ee4c5031ae1e5505db16df98f4293\\output\\res\\layout\\abc_search_view.xml"
+    },
+    {
+        "merged": "D:\\Android Projects\\AndroidStudioProjects\\FaceMess\\Android\\FaceMess\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_settings.xml",
+        "source": "D:\\Android Projects\\AndroidStudioProjects\\FaceMess\\Android\\FaceMess\\app\\src\\main\\res\\layout\\activity_settings.xml"
+    },
+    {
+        "merged": "D:\\Android Projects\\AndroidStudioProjects\\FaceMess\\Android\\FaceMess\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_icon.xml",
+        "source": "C:\\Users\\Praneet\\.android\\build-cache\\327c6005924ee4c5031ae1e5505db16df98f4293\\output\\res\\layout\\abc_list_menu_item_icon.xml"
+    },
+    {
+        "merged": "D:\\Android Projects\\AndroidStudioProjects\\FaceMess\\Android\\FaceMess\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_checkbox.xml",
+        "source": "C:\\Users\\Praneet\\.android\\build-cache\\327c6005924ee4c5031ae1e5505db16df98f4293\\output\\res\\layout\\abc_list_menu_item_checkbox.xml"
+    },
+    {
+        "merged": "D:\\Android Projects\\AndroidStudioProjects\\FaceMess\\Android\\FaceMess\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_bar_up_container.xml",
+        "source": "C:\\Users\\Praneet\\.android\\build-cache\\327c6005924ee4c5031ae1e5505db16df98f4293\\output\\res\\layout\\abc_action_bar_up_container.xml"
+    },
+    {
+        "merged": "D:\\Android Projects\\AndroidStudioProjects\\FaceMess\\Android\\FaceMess\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_activity_chooser_view.xml",
+        "source": "C:\\Users\\Praneet\\.android\\build-cache\\327c6005924ee4c5031ae1e5505db16df98f4293\\output\\res\\layout\\abc_activity_chooser_view.xml"
+    },
+    {
+        "merged": "D:\\Android Projects\\AndroidStudioProjects\\FaceMess\\Android\\FaceMess\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_expanded_menu_layout.xml",
+        "source": "C:\\Users\\Praneet\\.android\\build-cache\\327c6005924ee4c5031ae1e5505db16df98f4293\\output\\res\\layout\\abc_expanded_menu_layout.xml"
+    },
+    {
+        "merged": "D:\\Android Projects\\AndroidStudioProjects\\FaceMess\\Android\\FaceMess\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_mode_close_item_material.xml",
+        "source": "C:\\Users\\Praneet\\.android\\build-cache\\327c6005924ee4c5031ae1e5505db16df98f4293\\output\\res\\layout\\abc_action_mode_close_item_material.xml"
+    },
+    {
+        "merged": "D:\\Android Projects\\AndroidStudioProjects\\FaceMess\\Android\\FaceMess\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_layout_tab_icon.xml",
+        "source": "C:\\Users\\Praneet\\.android\\build-cache\\1d091dd11b302329968ab8e38fda63b745ceadc0\\output\\res\\layout\\design_layout_tab_icon.xml"
+    },
+    {
+        "merged": "G:\\Project\\Cross-Platform\\FaceMess\\Android\\FaceMess\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_main.xml",
+        "source": "G:\\Project\\Cross-Platform\\FaceMess\\Android\\FaceMess\\app\\src\\main\\res\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "G:\\Project\\Cross-Platform\\FaceMess\\Android\\FaceMess\\app\\build\\intermediates\\res\\merged\\debug\\layout\\support_simple_spinner_dropdown_item.xml",
+        "source": "C:\\Users\\Danish Shah\\.android\\build-cache\\8c1154fcf87c0bb85b2bacd176e7f7e16d1a8051\\output\\res\\layout\\support_simple_spinner_dropdown_item.xml"
+    },
+    {
+        "merged": "D:\\Android Projects\\AndroidStudioProjects\\FaceMess\\Android\\FaceMess\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_popup_menu_item_layout.xml",
+        "source": "C:\\Users\\Praneet\\.android\\build-cache\\327c6005924ee4c5031ae1e5505db16df98f4293\\output\\res\\layout\\abc_popup_menu_item_layout.xml"
+    },
+    {
+        "merged": "G:\\Project\\Cross-Platform\\FaceMess\\Android\\FaceMess\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_layout_snackbar.xml",
+        "source": "C:\\Users\\Danish Shah\\.android\\build-cache\\18288926512a3abc82efc5db11dac01f7f123d53\\output\\res\\layout\\design_layout_snackbar.xml"
+    },
+    {
+        "merged": "G:\\Project\\Cross-Platform\\FaceMess\\Android\\FaceMess\\app\\build\\intermediates\\res\\merged\\debug\\layout\\item_collection.xml",
+        "source": "G:\\Project\\Cross-Platform\\FaceMess\\Android\\FaceMess\\app\\src\\main\\res\\layout\\item_collection.xml"
+    },
+    {
+        "merged": "G:\\Project\\Cross-Platform\\FaceMess\\Android\\FaceMess\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_settings.xml",
+        "source": "G:\\Project\\Cross-Platform\\FaceMess\\Android\\FaceMess\\app\\src\\main\\res\\layout\\activity_settings.xml"
+    },
+    {
+        "merged": "G:\\Project\\Cross-Platform\\FaceMess\\Android\\FaceMess\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_menu_layout.xml",
+        "source": "C:\\Users\\Danish Shah\\.android\\build-cache\\8c1154fcf87c0bb85b2bacd176e7f7e16d1a8051\\output\\res\\layout\\abc_action_menu_layout.xml"
+    },
+    {
+        "merged": "G:\\Project\\Cross-Platform\\FaceMess\\Android\\FaceMess\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_screen_toolbar.xml",
+        "source": "C:\\Users\\Danish Shah\\.android\\build-cache\\8c1154fcf87c0bb85b2bacd176e7f7e16d1a8051\\output\\res\\layout\\abc_screen_toolbar.xml"
+    },
+    {
+        "merged": "G:\\Project\\Cross-Platform\\FaceMess\\Android\\FaceMess\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_media_custom.xml",
+        "source": "C:\\Users\\Danish Shah\\.android\\build-cache\\8c1154fcf87c0bb85b2bacd176e7f7e16d1a8051\\output\\res\\layout\\notification_template_media_custom.xml"
+    },
+    {
+        "merged": "G:\\Project\\Cross-Platform\\FaceMess\\Android\\FaceMess\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_search_dropdown_item_icons_2line.xml",
+        "source": "C:\\Users\\Danish Shah\\.android\\build-cache\\8c1154fcf87c0bb85b2bacd176e7f7e16d1a8051\\output\\res\\layout\\abc_search_dropdown_item_icons_2line.xml"
+    },
+    {
+        "merged": "G:\\Project\\Cross-Platform\\FaceMess\\Android\\FaceMess\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_menu_item_action_area.xml",
+        "source": "C:\\Users\\Danish Shah\\.android\\build-cache\\18288926512a3abc82efc5db11dac01f7f123d53\\output\\res\\layout\\design_menu_item_action_area.xml"
+    },
+    {
+        "merged": "G:\\Project\\Cross-Platform\\FaceMess\\Android\\FaceMess\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_search_view.xml",
+        "source": "C:\\Users\\Danish Shah\\.android\\build-cache\\8c1154fcf87c0bb85b2bacd176e7f7e16d1a8051\\output\\res\\layout\\abc_search_view.xml"
+    },
+    {
+        "merged": "D:\\Android Projects\\AndroidStudioProjects\\FaceMess\\Android\\FaceMess\\app\\build\\intermediates\\res\\merged\\debug\\layout\\item_collection.xml",
+        "source": "D:\\Android Projects\\AndroidStudioProjects\\FaceMess\\Android\\FaceMess\\app\\src\\main\\res\\layout\\item_collection.xml"
+    },
+    {
+        "merged": "G:\\Project\\Cross-Platform\\FaceMess\\Android\\FaceMess\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_part_time.xml",
+        "source": "C:\\Users\\Danish Shah\\.android\\build-cache\\8c1154fcf87c0bb85b2bacd176e7f7e16d1a8051\\output\\res\\layout\\notification_template_part_time.xml"
+    },
+    {
+        "merged": "G:\\Project\\Cross-Platform\\FaceMess\\Android\\FaceMess\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_lines_media.xml",
+        "source": "C:\\Users\\Danish Shah\\.android\\build-cache\\8c1154fcf87c0bb85b2bacd176e7f7e16d1a8051\\output\\res\\layout\\notification_template_lines_media.xml"
     },
     {
         "merged": "G:\\Project\\Cross-Platform\\FaceMess\\Android\\FaceMess\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_custom_big.xml",
@@ -108,60 +352,36 @@
         "source": "C:\\Users\\Danish Shah\\.android\\build-cache\\8c1154fcf87c0bb85b2bacd176e7f7e16d1a8051\\output\\res\\layout\\abc_action_mode_bar.xml"
     },
     {
-        "merged": "G:\\Project\\Cross-Platform\\FaceMess\\Android\\FaceMess\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_layout_tab_text.xml",
-        "source": "C:\\Users\\Danish Shah\\.android\\build-cache\\18288926512a3abc82efc5db11dac01f7f123d53\\output\\res\\layout\\design_layout_tab_text.xml"
-    },
-    {
-        "merged": "G:\\Project\\Cross-Platform\\FaceMess\\Android\\FaceMess\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_bottom_sheet_dialog.xml",
-        "source": "C:\\Users\\Danish Shah\\.android\\build-cache\\18288926512a3abc82efc5db11dac01f7f123d53\\output\\res\\layout\\design_bottom_sheet_dialog.xml"
-    },
-    {
-        "merged": "G:\\Project\\Cross-Platform\\FaceMess\\Android\\FaceMess\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_bar_up_container.xml",
-        "source": "C:\\Users\\Danish Shah\\.android\\build-cache\\8c1154fcf87c0bb85b2bacd176e7f7e16d1a8051\\output\\res\\layout\\abc_action_bar_up_container.xml"
+        "merged": "D:\\Android Projects\\AndroidStudioProjects\\FaceMess\\Android\\FaceMess\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_popup_menu_header_item_layout.xml",
+        "source": "C:\\Users\\Praneet\\.android\\build-cache\\327c6005924ee4c5031ae1e5505db16df98f4293\\output\\res\\layout\\abc_popup_menu_header_item_layout.xml"
     },
     {
         "merged": "G:\\Project\\Cross-Platform\\FaceMess\\Android\\FaceMess\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_screen_simple_overlay_action_mode.xml",
         "source": "C:\\Users\\Danish Shah\\.android\\build-cache\\8c1154fcf87c0bb85b2bacd176e7f7e16d1a8051\\output\\res\\layout\\abc_screen_simple_overlay_action_mode.xml"
     },
     {
+        "merged": "D:\\Android Projects\\AndroidStudioProjects\\FaceMess\\Android\\FaceMess\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_alert_dialog_title_material.xml",
+        "source": "C:\\Users\\Praneet\\.android\\build-cache\\327c6005924ee4c5031ae1e5505db16df98f4293\\output\\res\\layout\\abc_alert_dialog_title_material.xml"
+    },
+    {
         "merged": "G:\\Project\\Cross-Platform\\FaceMess\\Android\\FaceMess\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_layout.xml",
         "source": "C:\\Users\\Danish Shah\\.android\\build-cache\\8c1154fcf87c0bb85b2bacd176e7f7e16d1a8051\\output\\res\\layout\\abc_list_menu_item_layout.xml"
     },
     {
-        "merged": "G:\\Project\\Cross-Platform\\FaceMess\\Android\\FaceMess\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_navigation_item.xml",
-        "source": "C:\\Users\\Danish Shah\\.android\\build-cache\\18288926512a3abc82efc5db11dac01f7f123d53\\output\\res\\layout\\design_navigation_item.xml"
+        "merged": "D:\\Android Projects\\AndroidStudioProjects\\FaceMess\\Android\\FaceMess\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_profile.xml",
+        "source": "D:\\Android Projects\\AndroidStudioProjects\\FaceMess\\Android\\FaceMess\\app\\src\\main\\res\\layout\\activity_profile.xml"
     },
     {
-        "merged": "G:\\Project\\Cross-Platform\\FaceMess\\Android\\FaceMess\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_navigation_item_separator.xml",
-        "source": "C:\\Users\\Danish Shah\\.android\\build-cache\\18288926512a3abc82efc5db11dac01f7f123d53\\output\\res\\layout\\design_navigation_item_separator.xml"
-    },
-    {
-        "merged": "G:\\Project\\Cross-Platform\\FaceMess\\Android\\FaceMess\\app\\build\\intermediates\\res\\merged\\debug\\layout\\select_dialog_multichoice_material.xml",
-        "source": "C:\\Users\\Danish Shah\\.android\\build-cache\\8c1154fcf87c0bb85b2bacd176e7f7e16d1a8051\\output\\res\\layout\\select_dialog_multichoice_material.xml"
+        "merged": "D:\\Android Projects\\AndroidStudioProjects\\FaceMess\\Android\\FaceMess\\app\\build\\intermediates\\res\\merged\\debug\\layout\\select_dialog_item_material.xml",
+        "source": "C:\\Users\\Praneet\\.android\\build-cache\\327c6005924ee4c5031ae1e5505db16df98f4293\\output\\res\\layout\\select_dialog_item_material.xml"
     },
     {
         "merged": "G:\\Project\\Cross-Platform\\FaceMess\\Android\\FaceMess\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_profile.xml",
         "source": "G:\\Project\\Cross-Platform\\FaceMess\\Android\\FaceMess\\app\\src\\main\\res\\layout\\activity_profile.xml"
     },
     {
-        "merged": "G:\\Project\\Cross-Platform\\FaceMess\\Android\\FaceMess\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_screen_content_include.xml",
-        "source": "C:\\Users\\Danish Shah\\.android\\build-cache\\8c1154fcf87c0bb85b2bacd176e7f7e16d1a8051\\output\\res\\layout\\abc_screen_content_include.xml"
-    },
-    {
-        "merged": "G:\\Project\\Cross-Platform\\FaceMess\\Android\\FaceMess\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_icon.xml",
-        "source": "C:\\Users\\Danish Shah\\.android\\build-cache\\8c1154fcf87c0bb85b2bacd176e7f7e16d1a8051\\output\\res\\layout\\abc_list_menu_item_icon.xml"
-    },
-    {
-        "merged": "G:\\Project\\Cross-Platform\\FaceMess\\Android\\FaceMess\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_popup_menu_item_layout.xml",
-        "source": "C:\\Users\\Danish Shah\\.android\\build-cache\\8c1154fcf87c0bb85b2bacd176e7f7e16d1a8051\\output\\res\\layout\\abc_popup_menu_item_layout.xml"
-    },
-    {
-        "merged": "G:\\Project\\Cross-Platform\\FaceMess\\Android\\FaceMess\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_menu_item_layout.xml",
-        "source": "C:\\Users\\Danish Shah\\.android\\build-cache\\8c1154fcf87c0bb85b2bacd176e7f7e16d1a8051\\output\\res\\layout\\abc_action_menu_item_layout.xml"
-    },
-    {
-        "merged": "G:\\Project\\Cross-Platform\\FaceMess\\Android\\FaceMess\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_select_dialog_material.xml",
-        "source": "C:\\Users\\Danish Shah\\.android\\build-cache\\8c1154fcf87c0bb85b2bacd176e7f7e16d1a8051\\output\\res\\layout\\abc_select_dialog_material.xml"
+        "merged": "D:\\Android Projects\\AndroidStudioProjects\\FaceMess\\Android\\FaceMess\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_part_chronometer.xml",
+        "source": "C:\\Users\\Praneet\\.android\\build-cache\\327c6005924ee4c5031ae1e5505db16df98f4293\\output\\res\\layout\\notification_template_part_chronometer.xml"
     },
     {
         "merged": "G:\\Project\\Cross-Platform\\FaceMess\\Android\\FaceMess\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_navigation_item_header.xml",
@@ -172,28 +392,20 @@
         "source": "C:\\Users\\Danish Shah\\.android\\build-cache\\18288926512a3abc82efc5db11dac01f7f123d53\\output\\res\\layout\\design_navigation_menu.xml"
     },
     {
-        "merged": "G:\\Project\\Cross-Platform\\FaceMess\\Android\\FaceMess\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_alert_dialog_material.xml",
-        "source": "C:\\Users\\Danish Shah\\.android\\build-cache\\8c1154fcf87c0bb85b2bacd176e7f7e16d1a8051\\output\\res\\layout\\abc_alert_dialog_material.xml"
-    },
-    {
-        "merged": "G:\\Project\\Cross-Platform\\FaceMess\\Android\\FaceMess\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_icon_group.xml",
-        "source": "C:\\Users\\Danish Shah\\.android\\build-cache\\8c1154fcf87c0bb85b2bacd176e7f7e16d1a8051\\output\\res\\layout\\notification_template_icon_group.xml"
-    },
-    {
-        "merged": "G:\\Project\\Cross-Platform\\FaceMess\\Android\\FaceMess\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_bar_title_item.xml",
-        "source": "C:\\Users\\Danish Shah\\.android\\build-cache\\8c1154fcf87c0bb85b2bacd176e7f7e16d1a8051\\output\\res\\layout\\abc_action_bar_title_item.xml"
+        "merged": "D:\\Android Projects\\AndroidStudioProjects\\FaceMess\\Android\\FaceMess\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_layout_snackbar_include.xml",
+        "source": "C:\\Users\\Praneet\\.android\\build-cache\\1d091dd11b302329968ab8e38fda63b745ceadc0\\output\\res\\layout\\design_layout_snackbar_include.xml"
     },
     {
         "merged": "G:\\Project\\Cross-Platform\\FaceMess\\Android\\FaceMess\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_action.xml",
         "source": "C:\\Users\\Danish Shah\\.android\\build-cache\\8c1154fcf87c0bb85b2bacd176e7f7e16d1a8051\\output\\res\\layout\\notification_action.xml"
     },
     {
-        "merged": "G:\\Project\\Cross-Platform\\FaceMess\\Android\\FaceMess\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_action_tombstone.xml",
-        "source": "C:\\Users\\Danish Shah\\.android\\build-cache\\8c1154fcf87c0bb85b2bacd176e7f7e16d1a8051\\output\\res\\layout\\notification_action_tombstone.xml"
+        "merged": "D:\\Android Projects\\AndroidStudioProjects\\FaceMess\\Android\\FaceMess\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_navigation_item_header.xml",
+        "source": "C:\\Users\\Praneet\\.android\\build-cache\\1d091dd11b302329968ab8e38fda63b745ceadc0\\output\\res\\layout\\design_navigation_item_header.xml"
     },
     {
-        "merged": "G:\\Project\\Cross-Platform\\FaceMess\\Android\\FaceMess\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_dialog_title_material.xml",
-        "source": "C:\\Users\\Danish Shah\\.android\\build-cache\\8c1154fcf87c0bb85b2bacd176e7f7e16d1a8051\\output\\res\\layout\\abc_dialog_title_material.xml"
+        "merged": "G:\\Project\\Cross-Platform\\FaceMess\\Android\\FaceMess\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_action_tombstone.xml",
+        "source": "C:\\Users\\Danish Shah\\.android\\build-cache\\8c1154fcf87c0bb85b2bacd176e7f7e16d1a8051\\output\\res\\layout\\notification_action_tombstone.xml"
     },
     {
         "merged": "G:\\Project\\Cross-Platform\\FaceMess\\Android\\FaceMess\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_screen_simple.xml",
@@ -204,32 +416,48 @@
         "source": "C:\\Users\\Danish Shah\\.android\\build-cache\\8c1154fcf87c0bb85b2bacd176e7f7e16d1a8051\\output\\res\\layout\\abc_activity_chooser_view_list_item.xml"
     },
     {
-        "merged": "G:\\Project\\Cross-Platform\\FaceMess\\Android\\FaceMess\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_layout_snackbar_include.xml",
-        "source": "C:\\Users\\Danish Shah\\.android\\build-cache\\18288926512a3abc82efc5db11dac01f7f123d53\\output\\res\\layout\\design_layout_snackbar_include.xml"
+        "merged": "D:\\Android Projects\\AndroidStudioProjects\\FaceMess\\Android\\FaceMess\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_search_dropdown_item_icons_2line.xml",
+        "source": "C:\\Users\\Praneet\\.android\\build-cache\\327c6005924ee4c5031ae1e5505db16df98f4293\\output\\res\\layout\\abc_search_dropdown_item_icons_2line.xml"
     },
     {
-        "merged": "G:\\Project\\Cross-Platform\\FaceMess\\Android\\FaceMess\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_radio.xml",
-        "source": "C:\\Users\\Danish Shah\\.android\\build-cache\\8c1154fcf87c0bb85b2bacd176e7f7e16d1a8051\\output\\res\\layout\\abc_list_menu_item_radio.xml"
+        "merged": "D:\\Android Projects\\AndroidStudioProjects\\FaceMess\\Android\\FaceMess\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_layout_tab_text.xml",
+        "source": "C:\\Users\\Praneet\\.android\\build-cache\\1d091dd11b302329968ab8e38fda63b745ceadc0\\output\\res\\layout\\design_layout_tab_text.xml"
+    },
+    {
+        "merged": "D:\\Android Projects\\AndroidStudioProjects\\FaceMess\\Android\\FaceMess\\app\\build\\intermediates\\res\\merged\\debug\\layout\\support_simple_spinner_dropdown_item.xml",
+        "source": "C:\\Users\\Praneet\\.android\\build-cache\\327c6005924ee4c5031ae1e5505db16df98f4293\\output\\res\\layout\\support_simple_spinner_dropdown_item.xml"
+    },
+    {
+        "merged": "D:\\Android Projects\\AndroidStudioProjects\\FaceMess\\Android\\FaceMess\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_navigation_menu_item.xml",
+        "source": "C:\\Users\\Praneet\\.android\\build-cache\\1d091dd11b302329968ab8e38fda63b745ceadc0\\output\\res\\layout\\design_navigation_menu_item.xml"
+    },
+    {
+        "merged": "D:\\Android Projects\\AndroidStudioProjects\\FaceMess\\Android\\FaceMess\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_activity_chooser_view_list_item.xml",
+        "source": "C:\\Users\\Praneet\\.android\\build-cache\\327c6005924ee4c5031ae1e5505db16df98f4293\\output\\res\\layout\\abc_activity_chooser_view_list_item.xml"
+    },
+    {
+        "merged": "D:\\Android Projects\\AndroidStudioProjects\\FaceMess\\Android\\FaceMess\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_navigation_item_separator.xml",
+        "source": "C:\\Users\\Praneet\\.android\\build-cache\\1d091dd11b302329968ab8e38fda63b745ceadc0\\output\\res\\layout\\design_navigation_item_separator.xml"
     },
     {
         "merged": "G:\\Project\\Cross-Platform\\FaceMess\\Android\\FaceMess\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_popup_menu_header_item_layout.xml",
         "source": "C:\\Users\\Danish Shah\\.android\\build-cache\\8c1154fcf87c0bb85b2bacd176e7f7e16d1a8051\\output\\res\\layout\\abc_popup_menu_header_item_layout.xml"
     },
     {
-        "merged": "G:\\Project\\Cross-Platform\\FaceMess\\Android\\FaceMess\\app\\build\\intermediates\\res\\merged\\debug\\layout\\content_main.xml",
-        "source": "G:\\Project\\Cross-Platform\\FaceMess\\Android\\FaceMess\\app\\src\\main\\res\\layout\\content_main.xml"
+        "merged": "D:\\Android Projects\\AndroidStudioProjects\\FaceMess\\Android\\FaceMess\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_screen_simple.xml",
+        "source": "C:\\Users\\Praneet\\.android\\build-cache\\327c6005924ee4c5031ae1e5505db16df98f4293\\output\\res\\layout\\abc_screen_simple.xml"
     },
     {
-        "merged": "G:\\Project\\Cross-Platform\\FaceMess\\Android\\FaceMess\\app\\build\\intermediates\\res\\merged\\debug\\layout\\select_dialog_item_material.xml",
-        "source": "C:\\Users\\Danish Shah\\.android\\build-cache\\8c1154fcf87c0bb85b2bacd176e7f7e16d1a8051\\output\\res\\layout\\select_dialog_item_material.xml"
+        "merged": "D:\\Android Projects\\AndroidStudioProjects\\FaceMess\\Android\\FaceMess\\app\\build\\intermediates\\res\\merged\\debug\\layout\\select_dialog_multichoice_material.xml",
+        "source": "C:\\Users\\Praneet\\.android\\build-cache\\327c6005924ee4c5031ae1e5505db16df98f4293\\output\\res\\layout\\select_dialog_multichoice_material.xml"
     },
     {
         "merged": "G:\\Project\\Cross-Platform\\FaceMess\\Android\\FaceMess\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_text_input_password_icon.xml",
         "source": "C:\\Users\\Danish Shah\\.android\\build-cache\\18288926512a3abc82efc5db11dac01f7f123d53\\output\\res\\layout\\design_text_input_password_icon.xml"
     },
     {
-        "merged": "G:\\Project\\Cross-Platform\\FaceMess\\Android\\FaceMess\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_navigation_item_subheader.xml",
-        "source": "C:\\Users\\Danish Shah\\.android\\build-cache\\18288926512a3abc82efc5db11dac01f7f123d53\\output\\res\\layout\\design_navigation_item_subheader.xml"
+        "merged": "D:\\Android Projects\\AndroidStudioProjects\\FaceMess\\Android\\FaceMess\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_screen_toolbar.xml",
+        "source": "C:\\Users\\Praneet\\.android\\build-cache\\327c6005924ee4c5031ae1e5505db16df98f4293\\output\\res\\layout\\abc_screen_toolbar.xml"
     },
     {
         "merged": "G:\\Project\\Cross-Platform\\FaceMess\\Android\\FaceMess\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_expanded_menu_layout.xml",
@@ -238,5 +466,17 @@
     {
         "merged": "G:\\Project\\Cross-Platform\\FaceMess\\Android\\FaceMess\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_activity_chooser_view.xml",
         "source": "C:\\Users\\Danish Shah\\.android\\build-cache\\8c1154fcf87c0bb85b2bacd176e7f7e16d1a8051\\output\\res\\layout\\abc_activity_chooser_view.xml"
+    },
+    {
+        "merged": "D:\\Android Projects\\AndroidStudioProjects\\FaceMess\\Android\\FaceMess\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_radio.xml",
+        "source": "C:\\Users\\Praneet\\.android\\build-cache\\327c6005924ee4c5031ae1e5505db16df98f4293\\output\\res\\layout\\abc_list_menu_item_radio.xml"
+    },
+    {
+        "merged": "D:\\Android Projects\\AndroidStudioProjects\\FaceMess\\Android\\FaceMess\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_custom_big.xml",
+        "source": "C:\\Users\\Praneet\\.android\\build-cache\\327c6005924ee4c5031ae1e5505db16df98f4293\\output\\res\\layout\\notification_template_custom_big.xml"
+    },
+    {
+        "merged": "D:\\Android Projects\\AndroidStudioProjects\\FaceMess\\Android\\FaceMess\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_media.xml",
+        "source": "C:\\Users\\Praneet\\.android\\build-cache\\327c6005924ee4c5031ae1e5505db16df98f4293\\output\\res\\layout\\notification_template_media.xml"
     }
 ]

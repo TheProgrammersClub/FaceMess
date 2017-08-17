@@ -1,5 +1,13 @@
 [
     {
+        "merged": "D:\\Android Projects\\AndroidStudioProjects\\FaceMess\\Android\\FaceMess\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi\\ic_launcher.png",
+        "source": "D:\\Android Projects\\AndroidStudioProjects\\FaceMess\\Android\\FaceMess\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "D:\\Android Projects\\AndroidStudioProjects\\FaceMess\\Android\\FaceMess\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi\\ic_launcher_round.png",
+        "source": "D:\\Android Projects\\AndroidStudioProjects\\FaceMess\\Android\\FaceMess\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_round.png"
+    },
+    {
         "merged": "G:\\Project\\Cross-Platform\\FaceMess\\Android\\FaceMess\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi\\ic_launcher.png",
         "source": "G:\\Project\\Cross-Platform\\FaceMess\\Android\\FaceMess\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.png"
     },
