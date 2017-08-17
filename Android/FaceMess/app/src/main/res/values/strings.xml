@@ -3,4 +3,7 @@
     <string name="action_settings">Settings</string>
 
     <string name="love">Made with &#x2665; in India</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
