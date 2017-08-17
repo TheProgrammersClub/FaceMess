@@ -60,8 +60,16 @@
         "source": "C:\\Users\\Danish Shah\\.android\\build-cache\\18288926512a3abc82efc5db11dac01f7f123d53\\output\\res\\drawable\\design_bottom_navigation_item_background.xml"
     },
     {
+        "merged": "G:\\Project\\Cross-Platform\\FaceMess\\Android\\FaceMess\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\background.png",
+        "source": "G:\\Project\\Cross-Platform\\FaceMess\\Android\\FaceMess\\app\\src\\main\\res\\drawable\\background.png"
+    },
+    {
         "merged": "G:\\Project\\Cross-Platform\\FaceMess\\Android\\FaceMess\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_ab_back_material.xml",
         "source": "C:\\Users\\Danish Shah\\.android\\build-cache\\8c1154fcf87c0bb85b2bacd176e7f7e16d1a8051\\output\\res\\drawable\\abc_ic_ab_back_material.xml"
+    },
+    {
+        "merged": "G:\\Project\\Cross-Platform\\FaceMess\\Android\\FaceMess\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\logo.png",
+        "source": "G:\\Project\\Cross-Platform\\FaceMess\\Android\\FaceMess\\app\\src\\main\\res\\drawable\\logo.png"
     },
     {
         "merged": "G:\\Project\\Cross-Platform\\FaceMess\\Android\\FaceMess\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_seekbar_thumb_material.xml",
@@ -98,6 +106,10 @@
     {
         "merged": "G:\\Project\\Cross-Platform\\FaceMess\\Android\\FaceMess\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_text_cursor_material.xml",
         "source": "C:\\Users\\Danish Shah\\.android\\build-cache\\8c1154fcf87c0bb85b2bacd176e7f7e16d1a8051\\output\\res\\drawable\\abc_text_cursor_material.xml"
+    },
+    {
+        "merged": "G:\\Project\\Cross-Platform\\FaceMess\\Android\\FaceMess\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\circular_image.xml",
+        "source": "G:\\Project\\Cross-Platform\\FaceMess\\Android\\FaceMess\\app\\src\\main\\res\\drawable\\circular_image.xml"
     },
     {
         "merged": "G:\\Project\\Cross-Platform\\FaceMess\\Android\\FaceMess\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_textfield_search_material.xml",

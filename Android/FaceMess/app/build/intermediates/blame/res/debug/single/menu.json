@@ -1,5 +1,9 @@
 [
     {
+        "merged": "G:\\Project\\Cross-Platform\\FaceMess\\Android\\FaceMess\\app\\build\\intermediates\\res\\merged\\debug\\menu\\menu_profile.xml",
+        "source": "G:\\Project\\Cross-Platform\\FaceMess\\Android\\FaceMess\\app\\src\\main\\res\\menu\\menu_profile.xml"
+    },
+    {
         "merged": "G:\\Project\\Cross-Platform\\FaceMess\\Android\\FaceMess\\app\\build\\intermediates\\res\\merged\\debug\\menu\\menu_main.xml",
         "source": "G:\\Project\\Cross-Platform\\FaceMess\\Android\\FaceMess\\app\\src\\main\\res\\menu\\menu_main.xml"
     }

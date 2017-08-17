@@ -1,44 +1,64 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:baselineAligned="false"
-    android:gravity="center"
-    android:orientation="vertical">
+    android:baselineAligned="false">
 
     <ImageView
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
+        android:layout_height="350dp"
+        android:adjustViewBounds="true"
+        android:cropToPadding="false"
         android:scaleType="centerCrop"
         android:src="@drawable/background"
-        android:visibility="gone" />
+        app:srcCompat="@drawable/background" />
 
     <ImageView
         android:layout_width="150dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:src="@drawable/logo" />
+        android:src="@drawable/logo"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/imageView" />
 
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="100dp"
-        android:orientation="vertical">
+        android:layout_below="@+id/imageView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:orientation="vertical"
+        android:padding="20dp">
 
-        <Button
+        <ProgressBar
+            android:id="@+id/splash_prog"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:paddingLeft="20dp"
-            android:paddingRight="20dp"
-            android:text="LOGIN" />
+            android:visibility="gone"/>
 
         <Button
-            android:layout_width="wrap_content"
+            android:id="@+id/login"
+            android:layout_width="150dp"
             android:layout_height="wrap_content"
-            android:text="SIGNUP" />
+            android:backgroundTint="@color/colorPrimary"
+            android:fontFamily="san-serif"
+            android:text="LOGIN"
+            android:textColor="@android:color/white"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/signup"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/colorAccent"
+            android:fontFamily="san-serif"
+            android:text="SIGNUP"
+            android:textColor="@android:color/white"
+            android:textStyle="bold" />
 
     </LinearLayout>
 
-</LinearLayout>
+</RelativeLayout>

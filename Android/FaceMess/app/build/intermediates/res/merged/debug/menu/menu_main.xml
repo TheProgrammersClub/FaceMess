@@ -3,8 +3,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:context="com.facemess.MainActivity">
     <item
-        android:id="@+id/action_settings"
+        android:id="@+id/action_profile"
         android:orderInCategory="100"
-        android:title="@string/action_settings"
-        app:showAsAction="never" />
+        android:title="Profile"
+        android:icon="@drawable/circular_image"
+        app:showAsAction="always" />
 </menu>
