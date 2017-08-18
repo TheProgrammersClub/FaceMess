@@ -6,6 +6,6 @@
         android:id="@+id/action_profile"
         android:orderInCategory="100"
         android:title="Profile"
-        android:icon="@drawable/circular_image"
+        android:icon="@drawable/round_image"
         app:showAsAction="always" />
 </menu>

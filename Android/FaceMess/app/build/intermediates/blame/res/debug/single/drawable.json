@@ -36,6 +36,10 @@
         "source": "C:\\Users\\Danish Shah\\.android\\build-cache\\8c1154fcf87c0bb85b2bacd176e7f7e16d1a8051\\output\\res\\drawable\\abc_btn_borderless_material.xml"
     },
     {
+        "merged": "G:\\Project\\Cross-Platform\\FaceMess\\Android\\FaceMess\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\round_image.xml",
+        "source": "G:\\Project\\Cross-Platform\\FaceMess\\Android\\FaceMess\\app\\src\\main\\res\\drawable\\round_image.xml"
+    },
+    {
         "merged": "G:\\Project\\Cross-Platform\\FaceMess\\Android\\FaceMess\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ratingbar_indicator_material.xml",
         "source": "C:\\Users\\Danish Shah\\.android\\build-cache\\8c1154fcf87c0bb85b2bacd176e7f7e16d1a8051\\output\\res\\drawable\\abc_ratingbar_indicator_material.xml"
     },
@@ -106,10 +110,6 @@
     {
         "merged": "G:\\Project\\Cross-Platform\\FaceMess\\Android\\FaceMess\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_text_cursor_material.xml",
         "source": "C:\\Users\\Danish Shah\\.android\\build-cache\\8c1154fcf87c0bb85b2bacd176e7f7e16d1a8051\\output\\res\\drawable\\abc_text_cursor_material.xml"
-    },
-    {
-        "merged": "G:\\Project\\Cross-Platform\\FaceMess\\Android\\FaceMess\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\circular_image.xml",
-        "source": "G:\\Project\\Cross-Platform\\FaceMess\\Android\\FaceMess\\app\\src\\main\\res\\drawable\\circular_image.xml"
     },
     {
         "merged": "G:\\Project\\Cross-Platform\\FaceMess\\Android\\FaceMess\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_textfield_search_material.xml",

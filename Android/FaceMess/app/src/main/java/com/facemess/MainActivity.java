@@ -16,34 +16,61 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.SurfaceHolder;
 import android.view.SurfaceView;
+import android.view.View;
+import android.widget.Button;
 import android.widget.FrameLayout;
 
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
 import java.io.IOException;
+import java.util.List;
+
+import de.hdodenhof.circleimageview.CircleImageView;
+
+import static android.provider.MediaStore.Files.FileColumns.MEDIA_TYPE_IMAGE;
 
 public class MainActivity extends AppCompatActivity {
 
     private static final String TAG = "MainActivity";
     Camera camera, fcamera;
     CameraPreview preview, fpreview;
+    List<Camera.Size> supportedPreviewSizes;
+    Camera.Size previewSize;
+    Button capture;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
+
+
+        CircleImageView prof_iamge = (CircleImageView) findViewById(R.id.profile_image);
+        prof_iamge.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, ProfileActivity.class));
+            }
+        });
+
 
         if (Build.VERSION.SDK_INT >= 23)
             getCameraPermission();
         else {
             if (checkCamera(this)) {
+
+                supportedPreviewSizes = camera.getParameters().getSupportedPreviewSizes();
+
+
                 camera = getCameraInstance(0);
 
                 preview = new CameraPreview(this, camera);
 
                 FrameLayout container = (FrameLayout) findViewById(R.id.preview_container);
                 container.addView(preview);
+
+
 
 //                fcamera = getCameraInstance(findFrontCamera());
 //
@@ -55,6 +82,14 @@ public class MainActivity extends AppCompatActivity {
 
             }
         }
+
+        capture = (Button) findViewById(R.id.capture_btn);
+        capture.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                camera.takePicture(shutterCallback, null, pictureCallback);
+            }
+        });
 
 
     }
@@ -81,6 +116,37 @@ public class MainActivity extends AppCompatActivity {
 
         return super.onOptionsItemSelected(item);
     }
+
+    Camera.ShutterCallback shutterCallback = new Camera.ShutterCallback() {
+        @Override
+        public void onShutter() {
+
+        }
+    };
+
+    Camera.PictureCallback pictureCallback = new Camera.PictureCallback() {
+        @Override
+        public void onPictureTaken(byte[] data, Camera camera) {
+
+            File pictureFile = new File(String.valueOf(MEDIA_TYPE_IMAGE));
+            if (pictureFile == null){
+                Log.d(TAG, "Error creating media file, check storage permissions: ");
+                return;
+            }
+
+            try {
+                FileOutputStream fos = new FileOutputStream(pictureFile);
+                fos.write(data);
+                fos.close();
+            } catch (FileNotFoundException e) {
+                Log.d(TAG, "File not found: " + e.getMessage());
+            } catch (IOException e) {
+                Log.d(TAG, "Error accessing file: " + e.getMessage());
+            }
+        }
+    };
+
+
 
     public void getCameraPermission(){
 
@@ -171,6 +237,37 @@ public class MainActivity extends AppCompatActivity {
         return cameraId;
     }
 
+    public Camera.Size getOptimalPreviewSize(List<Camera.Size> sizes, int w, int h) {
+        final double ASPECT_TOLERANCE = 0.1;
+        double targetRatio=(double)h / w;
+
+        if (sizes == null) return null;
+
+        Camera.Size optimalSize = null;
+        double minDiff = Double.MAX_VALUE;
+
+        int targetHeight = h;
+
+        for (Camera.Size size : sizes) {
+            double ratio = (double) size.width / size.height;
+            if (Math.abs(ratio - targetRatio) > ASPECT_TOLERANCE) continue;
+            if (Math.abs(size.height - targetHeight) < minDiff) {
+                optimalSize = size;
+                minDiff = Math.abs(size.height - targetHeight);
+            }
+        }
+
+        if (optimalSize == null) {
+            minDiff = Double.MAX_VALUE;
+            for (Camera.Size size : sizes) {
+                if (Math.abs(size.height - targetHeight) < minDiff) {
+                    optimalSize = size;
+                    minDiff = Math.abs(size.height - targetHeight);
+                }
+            }
+        }
+        return optimalSize;
+    }
 
     public class CameraPreview extends SurfaceView implements SurfaceHolder.Callback{
 
@@ -221,6 +318,9 @@ public class MainActivity extends AppCompatActivity {
             // start preview with new settings
             try {
                 camera.setPreviewDisplay(holder);
+                Camera.Parameters parameters = camera.getParameters();
+//                parameters.setPreviewSize(previewSize.width, previewSize.height);
+//                camera.setParameters(parameters);
                 camera.startPreview();
 
             } catch (Exception e){
@@ -231,6 +331,17 @@ public class MainActivity extends AppCompatActivity {
         @Override
         public void surfaceDestroyed(SurfaceHolder holder) {
             camera.release();
+        }
+
+        @Override
+        protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
+            final int width = resolveSize(getSuggestedMinimumWidth(), widthMeasureSpec);
+            final int height = resolveSize(getSuggestedMinimumHeight(), heightMeasureSpec);
+            setMeasuredDimension(width, height);
+
+            if (supportedPreviewSizes != null) {
+                previewSize = getOptimalPreviewSize(supportedPreviewSizes, width, height);
+            }
         }
     }
 }

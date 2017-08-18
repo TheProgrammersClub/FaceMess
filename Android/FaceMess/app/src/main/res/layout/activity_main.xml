@@ -5,54 +5,61 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical">
 
-    <android.support.design.widget.AppBarLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:theme="@style/AppTheme.AppBarOverlay"
-        android:background="@android:color/transparent"
-        app:elevation="0dp">
+    <!--<android.support.design.widget.AppBarLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:theme="@style/AppTheme.AppBarOverlay"-->
+        <!--android:background="@android:color/transparent"-->
+        <!--app:elevation="0dp">-->
 
-        <android.support.v7.widget.Toolbar
-            android:id="@+id/toolbar"
-            android:layout_width="match_parent"
-            android:layout_height="?attr/actionBarSize"
-            android:background="@android:color/transparent"
-            app:popupTheme="@style/AppTheme.PopupOverlay" />
+        <!--<android.support.v7.widget.Toolbar-->
+            <!--android:id="@+id/toolbar"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="?attr/actionBarSize"-->
+            <!--android:background="@android:color/transparent"-->
+            <!--app:popupTheme="@style/AppTheme.PopupOverlay" />-->
 
-    </android.support.design.widget.AppBarLayout>
+    <!--</android.support.design.widget.AppBarLayout>-->
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1">
 
-        <FrameLayout
-            android:id="@+id/f_preview_container"
-            android:layout_width="100dp"
-            android:layout_height="150dp"
+        <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/profile_image"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="8dp"
+            android:elevation="4dp"
             android:layout_alignParentRight="true"
-            android:layout_margin="16dp"/>
+            android:background="@android:color/transparent"
+            android:src="@drawable/prof_pic"
+            app:civ_border_color="@android:color/white"
+            app:civ_border_width="1dp" />
+
+        <!--<FrameLayout-->
+            <!--android:id="@+id/f_preview_container"-->
+            <!--android:layout_width="100dp"-->
+            <!--android:layout_height="150dp"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:layout_margin="16dp"/>-->
 
         <FrameLayout
             android:id="@+id/preview_container"
             android:layout_width="match_parent"
             android:layout_height="match_parent" />
 
-
-    </RelativeLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="#fafafa"
-        android:gravity="center">
-
         <Button
             android:id="@+id/capture_btn"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="CAPTURE" />
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerInParent="true"
+            android:layout_margin="10dp"
+            android:background="@drawable/round_image" />
 
-    </LinearLayout>
+
+    </RelativeLayout>
 
 </LinearLayout>
