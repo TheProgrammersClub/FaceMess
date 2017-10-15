@@ -45,7 +45,6 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
 
-
         CircleImageView prof_iamge = (CircleImageView) findViewById(R.id.profile_image);
         prof_iamge.setOnClickListener(new View.OnClickListener() {
             @Override
